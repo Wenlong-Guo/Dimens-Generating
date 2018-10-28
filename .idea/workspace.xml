@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea667488-b463-48cc-bb21-edd129976e1c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Dimens-Generating.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Dimens-Generating.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/DimensionEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Dimens-Generating/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dimens-Generating/META-INF/plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Dimens-Generating/site/wenlong/dimens/DimensGenerate.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/META-INF/plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/Config.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/DimensGenerate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/DimensGenerate.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -63,11 +70,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file leaf-file-name="DimensGenerate.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/DimensGenerate.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+            <state relative-caret-position="57">
+              <caret line="87" column="46" lean-forward="true" selection-start-line="87" selection-start-column="46" selection-end-line="87" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -75,27 +82,58 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/dimens.xml">
+      <file leaf-file-name="DimensionEntity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/DimensionEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" column="15" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="15" />
+            <state relative-caret-position="304">
+              <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#581#582#0" expanded="true" />
+                <element signature="e#609#610#0" expanded="true" />
+                <element signature="e#646#647#0" expanded="true" />
+                <element signature="e#679#680#0" expanded="true" />
+                <element signature="e#783#784#0" expanded="true" />
+                <element signature="e#854#855#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file leaf-file-name="Config.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/Config.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="57">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="114">
+              <caret line="6" column="51" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="51" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Dimens-Generating.iml">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file leaf-file-name="File.java" pinned="false" current-in-tab="false">
+        <entry file="jar://I:/Jdk8/src.zip!/java/io/File.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-194">
+              <caret line="314" column="11" selection-start-line="314" selection-start-column="11" selection-end-line="314" selection-end-column="11" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dimens.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/dimens.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="76">
+              <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plugin.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="171">
+              <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -112,6 +150,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -119,9 +162,10 @@
         <option value="$PROJECT_DIR$/Document/develop.md" />
         <option value="$PROJECT_DIR$/src/impl/DimensGeneratingMenuAppImpl.java" />
         <option value="$PROJECT_DIR$/src/site/wenlong/dimens/DimensGeneratingMenuAction.java" />
-        <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
         <option value="$PROJECT_DIR$/src/site/wenlong/dimens/dimensGenerate.java" />
+        <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
         <option value="$PROJECT_DIR$/src/site/wenlong/dimens/Config.java" />
+        <option value="$PROJECT_DIR$/src/site/wenlong/dimens/DimensionEntity.java" />
         <option value="$PROJECT_DIR$/src/site/wenlong/dimens/DimensGenerate.java" />
       </list>
     </option>
@@ -139,6 +183,9 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="NodePackageJsonFileManager">
+    <packageJsonPaths />
+  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
@@ -151,13 +198,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="Dimens Generating" type="b2602c69:ProjectViewProjectNode" />
               <item name="Dimens-Generating" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dimens Generating" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dimens-Generating" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dimens Generating" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dimens-Generating" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Dimens Generating" type="b2602c69:ProjectViewProjectNode" />
@@ -189,7 +246,9 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -202,7 +261,8 @@
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3858093" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -228,16 +288,13 @@
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -ea" />
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
       <module name="Dimens-Generating" />
       <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -ea" />
       <option name="PROGRAM_PARAMETERS" />
       <predefined_log_file id="idea.log" enabled="true" />
-      <method v="2">
+      <method>
         <option name="Make" enabled="true" />
       </method>
     </configuration>
@@ -257,40 +314,61 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11948000" />
+    <option name="totallyTimeSpent" value="26808000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" weight="0.32884097" />
-      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" weight="0.32884097" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32884097" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32884097" />
       <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Database" />
+      <window_info id="Image Layers" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32952926" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" weight="0.32952926" />
+      <window_info id="Capture Tool" />
+      <window_info id="Designer" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info anchor="right" id="Database" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" />
+      <window_info anchor="right" id="Theme Preview" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32884097" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32884097" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -317,67 +395,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/DimensGeneratingMenuAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="5" column="39" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="39" />
-          <folding>
-            <element signature="e#261#262#0" expanded="true" />
-            <element signature="e#283#284#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/impl/DimensGeneratingMenuAppImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#373#374#0" expanded="true" />
-            <element signature="e#400#401#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/DimensGeneratingMenuApp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="28" lean-forward="true" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/DimensGeneratingMenuAction.java" />
+    <entry file="file://$PROJECT_DIR$/src/impl/DimensGeneratingMenuAppImpl.java" />
+    <entry file="file://$PROJECT_DIR$/src/DimensGeneratingMenuApp.java" />
     <entry file="file://$PROJECT_DIR$/Dimens-Generating.iml">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/dimens.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="15" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/io/File.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="270" column="43" lean-forward="true" selection-start-line="270" selection-start-column="43" selection-end-line="270" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/io/File.java" />
     <entry file="jar://$PROJECT_DIR$/lib/dom4j-2.1.1.jar!/org/dom4j/Node.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="157">
@@ -392,10 +416,75 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/dom4j-2.1.1.jar!/org/dom4j/Element.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="92" column="14" selection-start-line="92" selection-start-column="14" selection-end-line="92" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/dom4j-2.1.1.jar!/org/dom4j/io/XMLWriter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="604">
+          <caret line="113" column="11" selection-start-line="113" selection-start-column="11" selection-end-line="113" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://I:/Jdk8/src.zip!/java/io/FileOutputStream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-905">
+          <caret line="99" column="11" selection-start-line="99" selection-start-column="11" selection-end-line="99" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://I:/Jdk8/src.zip!/java/io/File.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-194">
+          <caret line="314" column="11" selection-start-line="314" selection-start-column="11" selection-end-line="314" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/dimens.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="51" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/DimensionEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="18" column="41" lean-forward="true" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#581#582#0" expanded="true" />
+            <element signature="e#609#610#0" expanded="true" />
+            <element signature="e#646#647#0" expanded="true" />
+            <element signature="e#679#680#0" expanded="true" />
+            <element signature="e#783#784#0" expanded="true" />
+            <element signature="e#854#855#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/DimensGenerate.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="22" column="17" lean-forward="true" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        <state relative-caret-position="57">
+          <caret line="87" column="46" lean-forward="true" selection-start-line="87" selection-start-column="46" selection-end-line="87" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
