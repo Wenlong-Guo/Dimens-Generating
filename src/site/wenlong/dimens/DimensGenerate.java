@@ -3,6 +3,7 @@ package site.wenlong.dimens;
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
 import com.intellij.openapi.actionSystem.PlatformDataKeys;
+import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.Messages;
 import com.intellij.openapi.vfs.VirtualFile;
 
@@ -21,7 +22,9 @@ public class DimensGenerate extends AnAction {
             Messages.showMessageDialog("您选择的文件不是dimens.xml,请重新生成", PLUGINS_NAME, Messages.getInformationIcon());
             return;
         }
-        Setting setting = new Setting(currentFile);
+        Project project = event.getData(PlatformDataKeys.PROJECT);
+        project.getProjectFile().refresh(true,true);
+        Setting setting = new Setting(currentFile,project);
         setting.setSize(1000, 600);
         setting.setLocationRelativeTo(null);
         setting.setVisible(true);

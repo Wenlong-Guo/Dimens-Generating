@@ -1,5 +1,6 @@
 package site.wenlong.dimens;
 
+import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.Messages;
 import com.intellij.openapi.vfs.VirtualFile;
 import com.intellij.ui.components.JBCheckBox;
@@ -37,12 +38,12 @@ public class Setting extends JFrame {
     private float mTargetDimens;
     private List<Float> multiDemens = new ArrayList<>();
 
-    public Setting(VirtualFile currentFile) throws HeadlessException {
+    public Setting(VirtualFile currentFile, Project project) throws HeadlessException {
         setContentPane(mRoot);
-        initData(currentFile);
+        initData(currentFile, project);
     }
 
-    private void initData(VirtualFile currentFile) {
+    private void initData(VirtualFile currentFile, Project project) {
         mCb_isCurrentDimens.addChangeListener(e -> {
             JBCheckBox checkbox = (JBCheckBox) e.getSource();
             isCurrentDimens = checkbox.isSelected();
@@ -56,6 +57,8 @@ public class Setting extends JFrame {
             if (isCurrentOriginDimensFail()) return;
             if (isTargetDimensFail()) return;
             generateDimens(currentFile, mTargetDimens);
+            dispose();
+            Objects.requireNonNull(project.getProjectFile()).getFileSystem().refresh(true);
             Messages.showMessageDialog("生成成功", PLUGINS_NAME, Messages.getInformationIcon());
         });
         btn_generateMulti.addActionListener(e -> {
@@ -64,6 +67,8 @@ public class Setting extends JFrame {
             for (Float targetDimens : multiDemens) {
                 generateDimens(currentFile, targetDimens);
             }
+            dispose();
+            Objects.requireNonNull(project.getProjectFile()).getFileSystem().refresh(true);
             Messages.showMessageDialog("生成成功", PLUGINS_NAME, Messages.getInformationIcon());
         });
     }
