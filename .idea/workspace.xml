@@ -1,18 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea667488-b463-48cc-bb21-edd129976e1c" name="Default Changelist" comment="develop : 增加reload项目功能">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dimens-Generating/site/wenlong/dimens/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dimens-Generating/site/wenlong/dimens/Config.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dimens-Generating/site/wenlong/dimens/DimensGenerate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dimens-Generating/site/wenlong/dimens/DimensGenerate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dimens-Generating/site/wenlong/dimens/dimens.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/Config.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/Config.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/DimensGenerate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/DimensGenerate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/DimensionEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/DimensionEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/Setting.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/Setting.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/Setting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/Setting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/dimens.xml" beforeDir="false" />
-    </list>
+    <list default="true" id="ea667488-b463-48cc-bb21-edd129976e1c" name="Default Changelist" comment="develop : 修改UI并通过自测,代码优雅度有待提高" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -101,8 +90,8 @@
       <file leaf-file-name="DimensionEntity.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/DimensionEntity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="154">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -347,15 +336,21 @@
       <option name="project" value="LOCAL" />
       <updated>1541005790084</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="develop : 修改UI并通过自测,代码优雅度有待提高">
+      <created>1541271257397</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1541271257397</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56637000" />
+    <option name="totallyTimeSpent" value="56913000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" x="703" y="104" width="170" height="615" id="Palette" order="9" type="FLOATING" />
       <window_info anchor="bottom" id="TODO" order="12" />
@@ -366,9 +361,9 @@
       <window_info anchor="bottom" id="Event Log" order="6" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="5" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="0" visible="true" weight="0.32952926" />
+      <window_info anchor="bottom" id="Run" order="0" weight="0.32952926" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32952926" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32952926" />
       <window_info id="Capture Tool" order="4" />
       <window_info id="Designer" order="3" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
@@ -418,7 +413,8 @@
     <MESSAGE value="develop : 插件的基础功能已具备" />
     <MESSAGE value="develop : 插件GUI完成" />
     <MESSAGE value="develop : 增加reload项目功能" />
-    <option name="LAST_COMMIT_MESSAGE" value="develop : 增加reload项目功能" />
+    <MESSAGE value="develop : 修改UI并通过自测,代码优雅度有待提高" />
+    <option name="LAST_COMMIT_MESSAGE" value="develop : 修改UI并通过自测,代码优雅度有待提高" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -603,8 +599,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/DimensionEntity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="154">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
