@@ -68,6 +68,7 @@ public class Setting extends JFrame {
                 generateDimens(currentFile, targetDimens);
             }
             dispose();
+            restoreDefaultSetting();
             Objects.requireNonNull(project.getProjectFile()).getFileSystem().refresh(true);
             Messages.showMessageDialog("生成成功", PLUGINS_NAME, Messages.getInformationIcon());
         });
@@ -119,9 +120,9 @@ public class Setting extends JFrame {
             return false;
         }
         //TODO 读取配置
-        Document converedDocument = converDimension(document, new DimensionEntity(targetDimens));
+        Document converedDocument = converDimension(document, new DimensionEntity(Config.DEFAULT_ORIGIN_DIMENS, targetDimens));
         try {
-            return createDimensFile(converedDocument, currentFile.getParent().getParent().getCanonicalPath(), new DimensionEntity(targetDimens), Config.DEFAULT_FILE_NAME, Config.IS_COVER_FILE);
+            return createDimensFile(converedDocument, currentFile.getParent().getParent().getCanonicalPath(), new DimensionEntity(Config.DEFAULT_ORIGIN_DIMENS, targetDimens), Config.DEFAULT_FILE_NAME, Config.IS_COVER_FILE);
         } catch (IOException e) {
             Messages.showMessageDialog("生成xml文件或文件夹异常,请提交问题到github,感谢", PLUGINS_NAME, Messages.getInformationIcon());
             return false;
@@ -166,7 +167,7 @@ public class Setting extends JFrame {
         File dimensFile = new File(parentFolder + "/" + defaultFileName);
         if (!isCover && dimensFile.exists()) {
             Messages.showMessageDialog("已经存在" + dimensionEntity.getFolderName() + "文件夹的" + defaultFileName + "文件" + "\n" +
-                    "请在Tools -> Dimens Generating Tools的菜单中勾选可以覆盖源文件" + "\n" +
+                    "请在Dimens Generating Tools的菜单中勾选可以覆盖源文件" + "\n" +
                     "或者备份后删除重新生成", PLUGINS_NAME, Messages.getInformationIcon());
             return false;
         }
@@ -177,5 +178,10 @@ public class Setting extends JFrame {
         xmlWriter.flush();
         xmlWriter.close();
         return true;
+    }
+
+    private void restoreDefaultSetting() {
+        Config.DEFAULT_ORIGIN_DIMENS = 360f;
+        Config.IS_COVER_FILE = true;
     }
 }
