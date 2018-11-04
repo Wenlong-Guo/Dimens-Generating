@@ -43,7 +43,7 @@
                   <horizontalTextPosition value="4"/>
                   <selected value="true"/>
                   <text value="生成的Dimens文件是否覆盖已有文件"/>
-                  <toolTipText value="请注意保存其他dimens文件"/>
+                  <toolTipText value="Whether the generated Dimens file overwrites the existing file "/>
                 </properties>
               </component>
               <component id="81878" class="com.intellij.ui.components.JBCheckBox" binding="mCb_isCurrentDimens">
@@ -56,6 +56,7 @@
                   <font size="18"/>
                   <selected value="true"/>
                   <text value="设置所选中的dimens.xml的最小宽度(不勾选默认最小宽度360dp)   "/>
+                  <toolTipText value="Set the minimum width of the selected dimens.xml (uncheck the default minimum width of 360dp) "/>
                 </properties>
               </component>
               <component id="d6991" class="javax.swing.JTextField" binding="et_originDimens">
@@ -93,6 +94,7 @@
                   <horizontalAlignment value="10"/>
                   <horizontalTextPosition value="10"/>
                   <text value="根据所选中的dimens.xml单独生成指定最小宽度的dimens"/>
+                  <toolTipText value="Generate the minimum width of the dimens based on the selected dimens.xml "/>
                 </properties>
               </component>
               <component id="6969e" class="javax.swing.JTextField" binding="et_targetDimens">
@@ -123,6 +125,7 @@
                 </constraints>
                 <properties>
                   <text value="生成"/>
+                  <toolTipText value="Generate"/>
                 </properties>
               </component>
               <component id="951d4" class="javax.swing.JLabel">
@@ -137,6 +140,7 @@
                   <horizontalAlignment value="2"/>
                   <horizontalTextPosition value="2"/>
                   <text value="根据选中的dimensi.xml生成多个dimens"/>
+                  <toolTipText value="Generate multiple dimens based on the selected dimensi.xml "/>
                 </properties>
               </component>
               <component id="c60dd" class="javax.swing.JTextField" binding="et_multiDimens">
@@ -161,6 +165,7 @@
                   <defaultCapable value="true"/>
                   <selected value="false"/>
                   <text value="生成"/>
+                  <toolTipText value="Generate"/>
                 </properties>
               </component>
               <component id="3eae3" class="javax.swing.JLabel">
@@ -172,6 +177,7 @@
                 <properties>
                   <font size="16"/>
                   <text value="格式如下(注意用小写逗号隔开)"/>
+                  <toolTipText value="The format is as follows (note separated by a lowercase comma) "/>
                 </properties>
               </component>
             </children>
