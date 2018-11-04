@@ -2,7 +2,7 @@
     <id>com.guowenlong.dimens</id>
     <name>Dimens Generating</name>
     <version>1.0.0</version>
-    <vendor email="guowenlong20000@sina.com" url="https://github.com/Wenlong-Guo/Dimens-Generating">YourCompany</vendor>
+    <vendor email="guowenlong20000@sina.com" url="https://github.com/Wenlong-Guo/Dimens-Generating">Guo Wenlong</vendor>
 
     <description><![CDATA[
     <h1>Dimens Tool</h1>
@@ -11,6 +11,7 @@
       <b>
       <a href="https://github.com/Wenlong-Guo/Dimens-Generating">GitHub</a> |
       <a href="https://github.com/Wenlong-Guo/Dimens-Generating/issues">Issues</a> |
+      <a href="https://plugins.jetbrains.com/plugin/11290-dimens-generating">Jetbrains</a> |
       <a href="https://github.com/Wenlong-Guo/Dimens-Generating/blob/master/README.md">README</a>
       </b>
       </p>
