@@ -19,5 +19,9 @@
 * Optimize the UI
 * Perfect the documentation
 
+## Change Notes
+* v1.0.1 Solve the problem that the specified size of the generated file is invalid </li>
+* v1.0.0 First Version</li>
+
 ## ScreenShot
 ![ScreenShot](https://github.com/Wenlong-Guo/Dimens-Generating/blob/master/ScreenShot/ScreenShot.gif)

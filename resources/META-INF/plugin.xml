@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.guowenlong.dimens</id>
     <name>Dimens Generating</name>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <vendor email="guowenlong20000@sina.com" url="https://github.com/Wenlong-Guo/Dimens-Generating">Guo Wenlong</vendor>
 
     <description><![CDATA[
@@ -52,6 +52,7 @@
 
     <change-notes><![CDATA[
       <ul>
+        <li>v1.0.1 Solve the problem that the specified size of the generated file is invalid </li>
         <li>v1.0.0 First Version</li>
       </ul>
     ]]>
