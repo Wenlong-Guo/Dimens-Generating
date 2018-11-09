@@ -33,8 +33,8 @@ public class Setting extends JFrame {
     private JTextField et_multiDimens;
     private JTextField et_targetDimens;
     private JButton btn_generateMulti;
-    private boolean isCurrentDimens;
-    private boolean isCoverEnable;
+    private boolean isCurrentDimens = true;
+    private boolean isCoverEnable = true;
     private float mTargetDimens;
     private List<Float> multiDemens = new ArrayList<>();
 
