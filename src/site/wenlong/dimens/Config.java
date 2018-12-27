@@ -5,4 +5,5 @@ public class Config {
     public final static String PLUGINS_NAME = "Dimens Generating Tools";
     public static boolean IS_COVER_FILE = true;
     public static float DEFAULT_ORIGIN_DIMENS = 360F;
+    public static int DEFAULT_DECIMAL_LENGTH = 2;
 }

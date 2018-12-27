@@ -33,6 +33,7 @@ public class Setting extends JFrame {
     private JTextField et_multiDimens;
     private JTextField et_targetDimens;
     private JButton btn_generateMulti;
+    private JBCheckBox mCb_decimalLength;
     private boolean isCurrentDimens = true;
     private boolean isCoverEnable = true;
     private float mTargetDimens;
@@ -148,10 +149,10 @@ public class Setting extends JFrame {
             float subElementValue;
             if (subElementValueString.endsWith("dp")) {
                 subElementValue = Float.valueOf(subElementValueString.substring(0, subElementValueString.length() - 2));
-                subElement.setText(dimensionEntity.calculateDimension(subElementValue) + "dp");
+                subElement.setText(dimensionEntity.calculateDimension(subElementValue, Config.DEFAULT_DECIMAL_LENGTH) + "dp");
             } else if (subElementValueString.endsWith("sp")) {
                 subElementValue = Float.valueOf(subElementValueString.substring(0, subElementValueString.length() - 2));
-                subElement.setText(dimensionEntity.calculateDimension(subElementValue) + "sp");
+                subElement.setText(dimensionEntity.calculateDimension(subElementValue, Config.DEFAULT_DECIMAL_LENGTH) + "sp");
             }
         }
         return coverDocument;

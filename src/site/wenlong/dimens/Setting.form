@@ -22,7 +22,7 @@
         <properties/>
         <border type="none"/>
         <children>
-          <grid id="4260" layout-manager="GridLayoutManager" row-count="11" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+          <grid id="4260" layout-manager="GridLayoutManager" row-count="13" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
             <margin top="12" left="12" bottom="0" right="12"/>
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="1" fill="1" indent="0" use-parent-layout="false">
@@ -34,7 +34,9 @@
             <children>
               <component id="92c03" class="com.intellij.ui.components.JBCheckBox" binding="mCb_isCovered">
                 <constraints>
-                  <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <preferred-size width="322" height="25"/>
+                  </grid>
                 </constraints>
                 <properties>
                   <font size="18"/>
@@ -48,7 +50,7 @@
               </component>
               <component id="81878" class="com.intellij.ui.components.JBCheckBox" binding="mCb_isCurrentDimens">
                 <constraints>
-                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
                     <preferred-size width="648" height="30"/>
                   </grid>
                 </constraints>
@@ -61,7 +63,7 @@
               </component>
               <component id="d6991" class="javax.swing.JTextField" binding="et_originDimens">
                 <constraints>
-                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                     <minimum-size width="80" height="-1"/>
                     <preferred-size width="80" height="30"/>
                     <maximum-size width="80" height="-1"/>
@@ -74,7 +76,7 @@
               </component>
               <component id="4a4ff" class="javax.swing.JLabel">
                 <constraints>
-                  <grid row="2" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                  <grid row="4" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false">
                     <preferred-size width="24" height="30"/>
                   </grid>
                 </constraints>
@@ -85,7 +87,7 @@
               </component>
               <component id="b1043" class="javax.swing.JLabel">
                 <constraints>
-                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="4" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="4" anchor="8" fill="0" indent="0" use-parent-layout="false">
                     <preferred-size width="648" height="30"/>
                   </grid>
                 </constraints>
@@ -99,7 +101,7 @@
               </component>
               <component id="6969e" class="javax.swing.JTextField" binding="et_targetDimens">
                 <constraints>
-                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                  <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
                     <minimum-size width="80" height="-1"/>
                     <preferred-size width="80" height="30"/>
                     <maximum-size width="80" height="-1"/>
@@ -112,7 +114,7 @@
               </component>
               <component id="c6fa6" class="javax.swing.JLabel">
                 <constraints>
-                  <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <grid row="6" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <font size="18"/>
@@ -121,7 +123,7 @@
               </component>
               <component id="e6f57" class="javax.swing.JButton" binding="btn_generateSingle">
                 <constraints>
-                  <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="6" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <text value="生成"/>
@@ -130,7 +132,7 @@
               </component>
               <component id="951d4" class="javax.swing.JLabel">
                 <constraints>
-                  <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                  <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
                     <preferred-size width="220" height="30"/>
                   </grid>
                 </constraints>
@@ -145,7 +147,7 @@
               </component>
               <component id="c60dd" class="javax.swing.JTextField" binding="et_multiDimens">
                 <constraints>
-                  <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="6" anchor="9" fill="1" indent="0" use-parent-layout="false">
+                  <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="6" anchor="9" fill="1" indent="0" use-parent-layout="false">
                     <preferred-size width="-1" height="30"/>
                   </grid>
                 </constraints>
@@ -154,12 +156,12 @@
                   <dropMode value="INSERT"/>
                   <font size="16"/>
                   <horizontalAlignment value="10"/>
-                  <text value="360,380,400,420,440"/>
+                  <text value="300,320,340,360,380,400,420,440,460,500"/>
                 </properties>
               </component>
               <component id="68c0c" class="javax.swing.JButton" binding="btn_generateMulti">
                 <constraints>
-                  <grid row="10" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <grid row="12" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
                 </constraints>
                 <properties>
                   <defaultCapable value="true"/>
@@ -170,7 +172,7 @@
               </component>
               <component id="3eae3" class="javax.swing.JLabel">
                 <constraints>
-                  <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                  <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
                     <preferred-size width="-1" height="30"/>
                   </grid>
                 </constraints>
@@ -178,6 +180,33 @@
                   <font size="16"/>
                   <text value="格式如下(注意用小写逗号隔开)"/>
                   <toolTipText value="The format is as follows (note separated by a lowercase comma) "/>
+                </properties>
+              </component>
+              <component id="5e7b7" class="com.intellij.ui.components.JBCheckBox" binding="mCb_decimalLength">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="4" vsize-policy="1" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                </constraints>
+                <properties>
+                  <font size="18"/>
+                  <hideActionText value="false"/>
+                  <horizontalAlignment value="2"/>
+                  <horizontalTextPosition value="4"/>
+                  <selected value="true"/>
+                  <text value="生成文件的小数位数(小数部分不保留0以节省占用空间)"/>
+                  <toolTipText value="The number of decimal places in the generated file (the decimal part does not retain 0 to save space)"/>
+                </properties>
+              </component>
+              <component id="9276e" class="javax.swing.JTextField">
+                <constraints>
+                  <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="1" anchor="8" fill="0" indent="0" use-parent-layout="false">
+                    <minimum-size width="80" height="-1"/>
+                    <preferred-size width="80" height="30"/>
+                    <maximum-size width="80" height="-1"/>
+                  </grid>
+                </constraints>
+                <properties>
+                  <horizontalAlignment value="0"/>
+                  <text value="360"/>
                 </properties>
               </component>
             </children>

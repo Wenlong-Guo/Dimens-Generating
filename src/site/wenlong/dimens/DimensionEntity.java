@@ -1,7 +1,5 @@
 package site.wenlong.dimens;
 
-import java.text.DecimalFormat;
-
 public class DimensionEntity {
 
     public DimensionEntity(float originDimension, float toDimension) {
@@ -21,7 +19,7 @@ public class DimensionEntity {
         return folderName;
     }
 
-    public String calculateDimension(float dimens) {
-        return new DecimalFormat("#.00").format(dimens / scale);
+    public String calculateDimension(float dimens, int length) {
+        return Utils.trimDecimal(dimens / scale, length);
     }
 }
