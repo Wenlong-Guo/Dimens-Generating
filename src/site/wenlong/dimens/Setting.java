@@ -25,7 +25,7 @@ import static site.wenlong.dimens.Config.PLUGINS_NAME;
  * TODO UI 颜色还需要调整一下下
  */
 public class Setting extends JFrame {
-    JPanel mRoot;
+    private JPanel mRoot;
     private JBCheckBox mCb_isCovered;
     private JBCheckBox mCb_isCurrentDimens;
     private JTextField et_originDimens;
@@ -34,8 +34,11 @@ public class Setting extends JFrame {
     private JTextField et_targetDimens;
     private JButton btn_generateMulti;
     private JBCheckBox mCb_decimalLength;
+    private JTextField et_decimalBit;
     private boolean isCurrentDimens = true;
     private boolean isCoverEnable = true;
+    private boolean isControlDecimalBit = true;
+
     private float mTargetDimens;
     private List<Float> multiDemens = new ArrayList<>();
 
@@ -53,6 +56,11 @@ public class Setting extends JFrame {
             JBCheckBox checkbox = (JBCheckBox) e.getSource();
             isCoverEnable = checkbox.isSelected();
             Config.IS_COVER_FILE = isCoverEnable;
+        });
+        mCb_decimalLength.addChangeListener(e -> {
+            JBCheckBox checkBox = (JBCheckBox) e.getSource();
+            isControlDecimalBit = checkBox.isSelected();
+            Config.IS_CONTROL_DECIMAL_BIT = isControlDecimalBit;
         });
         btn_generateSingle.addActionListener(e -> {
             if (isCurrentOriginDimensFail()) return;
@@ -147,12 +155,20 @@ public class Setting extends JFrame {
             subElement = elements.get(i);
             subElementValueString = (String) subElement.getData();
             float subElementValue;
+            int bit = Config.DEFAULT_DECIMAL_BIT;
+            if (isControlDecimalBit) {
+                try {
+                    bit = Integer.getInteger(et_decimalBit.getText());
+                } catch (NumberFormatException e) {
+                    Messages.showMessageDialog("请填写数字,现在默认按照2位生成了", PLUGINS_NAME, Messages.getInformationIcon());
+                }
+            }
             if (subElementValueString.endsWith("dp")) {
                 subElementValue = Float.valueOf(subElementValueString.substring(0, subElementValueString.length() - 2));
-                subElement.setText(dimensionEntity.calculateDimension(subElementValue, Config.DEFAULT_DECIMAL_LENGTH) + "dp");
+                subElement.setText(dimensionEntity.calculateDimension(subElementValue, bit) + "dp");
             } else if (subElementValueString.endsWith("sp")) {
                 subElementValue = Float.valueOf(subElementValueString.substring(0, subElementValueString.length() - 2));
-                subElement.setText(dimensionEntity.calculateDimension(subElementValue, Config.DEFAULT_DECIMAL_LENGTH) + "sp");
+                subElement.setText(dimensionEntity.calculateDimension(subElementValue, bit) + "sp");
             }
         }
         return coverDocument;
