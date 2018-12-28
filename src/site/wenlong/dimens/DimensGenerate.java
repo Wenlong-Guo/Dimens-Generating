@@ -24,7 +24,7 @@ public class DimensGenerate extends AnAction {
         }
         Project project = event.getData(PlatformDataKeys.PROJECT);
         Setting setting = new Setting(currentFile,project);
-        setting.setSize(1000, 350);
+        setting.setSize(1000, 450);
         setting.setLocationRelativeTo(null);
         setting.setVisible(true);
     }

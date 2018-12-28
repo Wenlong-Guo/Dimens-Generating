@@ -35,10 +35,13 @@ public class Setting extends JFrame {
     private JButton btn_generateMulti;
     private JBCheckBox mCb_decimalLength;
     private JTextField et_decimalBit;
+    private JBCheckBox mCb_isChangeQualifierName;
+    private JTextField et_DefaultQualifierName;
     private boolean isCurrentDimens = true;
     private boolean isCoverEnable = true;
     private boolean isControlDecimalBit = true;
-
+    private boolean isChangeQualifierName = true;
+    private String defaultQualifierName = "sw";
     private float mTargetDimens;
     private List<Float> multiDemens = new ArrayList<>();
 
@@ -62,11 +65,15 @@ public class Setting extends JFrame {
             isControlDecimalBit = checkBox.isSelected();
             Config.IS_CONTROL_DECIMAL_BIT = isControlDecimalBit;
         });
+        mCb_isChangeQualifierName.addChangeListener(e -> {
+            JBCheckBox checkBox = (JBCheckBox) e.getSource();
+            isChangeQualifierName = checkBox.isSelected();
+        });
         btn_generateSingle.addActionListener(e -> {
             if (isCurrentOriginDimensFail()) return;
             if (isTargetDimensFail()) return;
             generateDimens(currentFile, mTargetDimens);
-            dispose();
+//            dispose();
             Objects.requireNonNull(project.getProjectFile()).getFileSystem().refresh(true);
             Messages.showMessageDialog("生成成功", PLUGINS_NAME, Messages.getInformationIcon());
         });
@@ -129,14 +136,15 @@ public class Setting extends JFrame {
             return false;
         }
         //TODO 读取配置
-        Document converedDocument = converDimension(document, new DimensionEntity(Config.DEFAULT_ORIGIN_DIMENS, targetDimens));
+        String qualifierName = defaultQualifierName;
+        if (isChangeQualifierName) qualifierName = et_DefaultQualifierName.getText();
+        Document converedDocument = converDimension(document, new DimensionEntity(Config.DEFAULT_ORIGIN_DIMENS, targetDimens, qualifierName));
         try {
-            return createDimensFile(converedDocument, currentFile.getParent().getParent().getCanonicalPath(), new DimensionEntity(Config.DEFAULT_ORIGIN_DIMENS, targetDimens), Config.DEFAULT_FILE_NAME, Config.IS_COVER_FILE);
+            return createDimensFile(converedDocument, currentFile.getParent().getParent().getCanonicalPath(), new DimensionEntity(Config.DEFAULT_ORIGIN_DIMENS, targetDimens, qualifierName), Config.DEFAULT_FILE_NAME, Config.IS_COVER_FILE);
         } catch (IOException e) {
             Messages.showMessageDialog("生成xml文件或文件夹异常,请提交问题到github,感谢", PLUGINS_NAME, Messages.getInformationIcon());
             return false;
         }
-        //todo reload项目
     }
 
     private Document getDocument(VirtualFile currentFile) throws DocumentException {
@@ -158,7 +166,7 @@ public class Setting extends JFrame {
             int bit = Config.DEFAULT_DECIMAL_BIT;
             if (isControlDecimalBit) {
                 try {
-                    bit = Integer.getInteger(et_decimalBit.getText());
+                    bit = Integer.valueOf(et_decimalBit.getText());
                 } catch (NumberFormatException e) {
                     Messages.showMessageDialog("请填写数字,现在默认按照2位生成了", PLUGINS_NAME, Messages.getInformationIcon());
                 }

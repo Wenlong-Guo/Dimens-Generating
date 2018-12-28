@@ -2,10 +2,10 @@ package site.wenlong.dimens;
 
 public class DimensionEntity {
 
-    public DimensionEntity(float originDimension, float toDimension) {
+    public DimensionEntity(float originDimension, float toDimension, String qualifierName) {
 
         this.scale = originDimension / toDimension;
-        this.folderName = "values-sw" + (int) toDimension + "dp";
+        this.folderName = "values-" + qualifierName + (int) toDimension + "dp";
     }
 
     private float scale;
