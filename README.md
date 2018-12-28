@@ -1,3 +1,14 @@
+
+Dimens-Generating
+=================
+
+[![Jetbrains Plugins][plugin-img]][plugin]
+[![License][license-img]][license]
+[![Build Status][build-img-master]][travis-ci]
+[![GitHub release][release-img]][latest-release]
+[![Version][version-img]][plugin]
+[![Downloads][downloads-img]][plugin]
+
 # Dimens-Generating
 :ballot_box_with_check:A Generate any smallest width screen size dimens.xml plugin.
 ## Features
