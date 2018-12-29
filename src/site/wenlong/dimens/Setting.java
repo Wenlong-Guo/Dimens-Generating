@@ -73,7 +73,7 @@ public class Setting extends JFrame {
             if (isCurrentOriginDimensFail()) return;
             if (isTargetDimensFail()) return;
             generateDimens(currentFile, mTargetDimens);
-//            dispose();
+            dispose();
             Objects.requireNonNull(project.getProjectFile()).getFileSystem().refresh(true);
             Messages.showMessageDialog("生成成功", PLUGINS_NAME, Messages.getInformationIcon());
         });

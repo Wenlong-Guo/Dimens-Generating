@@ -52,8 +52,9 @@
 
     <change-notes><![CDATA[
       <ul>
-        <li>v1.0.1 Solve the problem that the specified size of the generated file is invalid </li>
-        <li>v1.0.0 First Version</li>
+        <li>V1.1.0 ⑴Custom decimal bit ⑵Generate multiple default parameter ⑶Custom qualifier name</li>
+        <li>V1.0.1 Solve the problem that the specified size of the generated file is invalid </li>
+        <li>V1.0.0 First Version</li>
       </ul>
     ]]>
     </change-notes>

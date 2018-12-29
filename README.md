@@ -26,14 +26,20 @@ Dimens-Generating
 * Perfect the documentation
 
 ## Change Notes
-* v1.0.1 Solve the problem that the specified size of the generated file is invalid </li>
-* v1.0.0 First Version</li>
+* V1.1.0  
+⑴Custom decimal bit   
+⑵Generate multiple default parameter   
+⑶Custom qualifier name  
+* V1.0.1   
+Solve the problem that the specified size of the generated file is invalid
+* V1.0.0    
+First Version
 
 ## ScreenShot
 ![ScreenShot](https://github.com/Wenlong-Guo/Dimens-Generating/blob/master/ScreenShot/ScreenShot.gif)
 
 [license-img]: https://img.shields.io/badge/License-MIT-green.svg
 [license]: https://github.com/Wenlong-Guo/Dimens-Generating/blob/master/LICENSE
-[version-img]:https://img.shields.io/badge/Jetbrains%20Plugins-V1.0.1-blue.svg
+[version-img]:https://img.shields.io/badge/Jetbrains%20Plugins-V1.1.0-blue.svg
 [plugin]: https://plugins.jetbrains.com/plugin/11290
 
