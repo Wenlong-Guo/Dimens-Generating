@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea667488-b463-48cc-bb21-edd129976e1c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/DimensGenerate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/DimensGenerate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/DimensionEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/DimensionEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/Setting.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/Setting.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/Setting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/Setting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/Utils.java" afterDir="false" />
-    </list>
+    <list default="true" id="ea667488-b463-48cc-bb21-edd129976e1c" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -132,97 +125,29 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/Setting.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="140" column="66" selection-start-line="140" selection-start-column="66" selection-end-line="140" selection-end-column="66" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="311">
+                <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/com/intellij/ide/IdeEventQueue.class">
+        <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="507" selection-start-line="507" selection-end-line="507" />
+            <state relative-caret-position="220">
+              <caret line="54" column="45" lean-forward="true" selection-start-line="54" selection-end-line="55" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/com/intellij/ide/ToolkitBugsProcessor.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="42" selection-start-line="42" selection-end-line="42" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/lib/util.jar!/com/intellij/openapi/util/registry/Registry.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="62" selection-start-line="62" selection-end-line="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/dom4j-2.1.1.jar!/org/dom4j/tree/AbstractElement.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="177" selection-start-line="177" selection-end-line="177" />
-              <folding>
-                <element signature="e#5407#5408#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/dom4j-2.1.1.jar!/org/dom4j/tree/DefaultElement.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="100" selection-start-line="100" selection-end-line="100" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/dom4j-2.1.1.jar!/org/dom4j/tree/AbstractBranch.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="66" selection-start-line="66" selection-end-line="66" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/dom4j-2.1.1.jar!/org/dom4j/tree/DefaultDocument.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="61" selection-start-line="61" selection-end-line="61" />
-              <folding>
-                <element signature="e#1598#1599#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/DimensionEntity.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="76">
-              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-              <folding>
-                <element signature="e#508#509#0" expanded="true" />
-                <element signature="e#572#573#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/Setting.form">
+          <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
     </leaf>
@@ -310,11 +235,6 @@
             <path>
               <item name="Dimens Generating" type="b2602c69:ProjectViewProjectNode" />
               <item name="Dimens-Generating-Plugins" type="462c0819:PsiDirectoryNode" />
-              <item name="Document" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Dimens Generating" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Dimens-Generating-Plugins" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -366,16 +286,18 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="AnalyzeApkAction.lastApkPath" value="$PROJECT_DIR$" />
     <property name="GenerateAntBuildDialog.backupFiles" value="true" />
     <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
-    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="dimens_generating" />
+    <property name="GenerateAntBuildDialog.generateSingleFile" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="Dimens Generating V1.1.0" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.STATE" value="right" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1545993719820" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/dom4j-2.1.1.jar!/" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546052424554" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Libraries" />
@@ -538,11 +460,10 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86945000" />
+    <option name="totallyTimeSpent" value="87407000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16709511" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -600,7 +521,8 @@
     <MESSAGE value="develop : Version 1.0.0 完善文档 提交插件市场 等待审核" />
     <MESSAGE value="develop : Version 1.0.1 解决指定大小生成文件失效的问题" />
     <MESSAGE value="develop : 完善README" />
-    <option name="LAST_COMMIT_MESSAGE" value="develop : 完善README" />
+    <MESSAGE value="develop : 完成 V1.1.0 版本的功能和文档1.自定义dimens 保留小数点.2.默认生成多套参数优化.3. 自定义限定符名称." />
+    <option name="LAST_COMMIT_MESSAGE" value="develop : 完成 V1.1.0 版本的功能和文档1.自定义dimens 保留小数点.2.默认生成多套参数优化.3. 自定义限定符名称." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -693,16 +615,16 @@
     <entry file="file://$PROJECT_DIR$/screenMatch_example_dimens.xml" />
     <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1045">
-          <caret line="55" column="37" selection-start-line="54" selection-start-column="7" selection-end-line="55" selection-end-column="37" />
+        <state relative-caret-position="220">
+          <caret line="54" column="45" lean-forward="true" selection-start-line="54" selection-end-line="55" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="274">
-            <caret line="23" column="27" lean-forward="true" selection-start-line="23" selection-start-column="27" selection-end-line="23" selection-end-column="27" />
+          <first_editor relative-caret-position="311">
+            <caret line="31" column="24" lean-forward="true" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
           </first_editor>
           <second_editor />
         </state>
