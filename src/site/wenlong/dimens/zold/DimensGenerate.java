@@ -1,4 +1,4 @@
-package site.wenlong.dimens;
+package site.wenlong.dimens.zold;
 
 import com.intellij.openapi.actionSystem.AnAction;
 import com.intellij.openapi.actionSystem.AnActionEvent;
@@ -7,7 +7,7 @@ import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.Messages;
 import com.intellij.openapi.vfs.VirtualFile;
 
-import static site.wenlong.dimens.Config.PLUGINS_NAME;
+import static site.wenlong.dimens.zold.Config.PLUGINS_NAME;
 
 public class DimensGenerate extends AnAction {
     private boolean isCurrentFilePassable(VirtualFile currentFile) {

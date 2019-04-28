@@ -1,4 +1,4 @@
-package site.wenlong.dimens;
+package site.wenlong.dimens.zold;
 
 public class DimensionEntity {
 

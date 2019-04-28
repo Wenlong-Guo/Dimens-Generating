@@ -1,4 +1,4 @@
-package site.wenlong.dimens;
+package site.wenlong.dimens.zold;
 
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.Messages;
@@ -19,7 +19,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-import static site.wenlong.dimens.Config.PLUGINS_NAME;
+import static site.wenlong.dimens.zold.Config.PLUGINS_NAME;
 
 /**
  * TODO UI 颜色还需要调整一下下
