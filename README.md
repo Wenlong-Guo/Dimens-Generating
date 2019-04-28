@@ -26,12 +26,19 @@ Dimens-Generating
 * Perfect the documentation
 
 ## Change Notes
+* V1.2.0 
+1. Redraw the UI 
+2. Add save configuration function  
+3. Support English and Chinese 
+4. Fix bug where resource attribute cannot be converted starting with "dip"</li>
+
 * V1.1.0  
-⑴Custom decimal bit   
-⑵Generate multiple default parameter   
-⑶Custom qualifier name  
+1. Custom decimal bit  
+2. Generate multiple default parameter   
+3. Custom qualifier name  
 * V1.0.1   
 Solve the problem that the specified size of the generated file is invalid
+
 * V1.0.0    
 First Version
 
@@ -40,6 +47,6 @@ First Version
 
 [license-img]: https://img.shields.io/badge/License-MIT-green.svg
 [license]: https://github.com/Wenlong-Guo/Dimens-Generating/blob/master/LICENSE
-[version-img]:https://img.shields.io/badge/Jetbrains%20Plugins-V1.1.0-blue.svg
+[version-img]:https://img.shields.io/badge/Jetbrains%20Plugins-V1.2.0-blue.svg
 [plugin]: https://plugins.jetbrains.com/plugin/11290
 

@@ -77,7 +77,7 @@
     <actions>
         <!-- Add your actions here -->
 
-        <action id="dimensGenerate" class="site.wenlong.dimens.DimensGenerate" text="Generate Dimens"
+        <action id="dimensGenerate" class="site.wenlong.dimens.zold.DimensGenerate" text="Generate Dimens"
                 description="DimensGeneratingMenuAction">
             <add-to-group group-id="ProjectViewCompileGroup" anchor="first"/>
         </action>
