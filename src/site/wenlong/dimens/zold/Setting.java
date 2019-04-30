@@ -9,6 +9,7 @@ import org.dom4j.DocumentException;
 import org.dom4j.Element;
 import org.dom4j.io.SAXReader;
 import org.dom4j.io.XMLWriter;
+import site.wenlong.dimens.core.Configuration;
 
 import javax.swing.*;
 import java.awt.*;
@@ -25,6 +26,8 @@ import static site.wenlong.dimens.zold.Config.PLUGINS_NAME;
  * TODO UI 颜色还需要调整一下下
  */
 public class Setting extends JFrame {
+    private Configuration configuration = Configuration.getInstance();
+
     private JPanel mRoot;
     private JBCheckBox mCb_isCovered;
     private JBCheckBox mCb_isCurrentDimens;
@@ -48,6 +51,12 @@ public class Setting extends JFrame {
     public Setting(VirtualFile currentFile, Project project) throws HeadlessException {
         setContentPane(mRoot);
         initData(currentFile, project);
+        initConfiguration();
+    }
+
+    private void initConfiguration() {
+        mCb_isCovered.setSelected(configuration.isCover);
+        mCb_isCurrentDimens.setSelected(configuration.isMinWidth);
     }
 
     private void initData(VirtualFile currentFile, Project project) {
@@ -88,6 +97,7 @@ public class Setting extends JFrame {
             Objects.requireNonNull(project.getProjectFile()).getFileSystem().refresh(true);
             Messages.showMessageDialog("生成成功", PLUGINS_NAME, Messages.getInformationIcon());
         });
+
     }
 
     private boolean isTargetDimensFail() {

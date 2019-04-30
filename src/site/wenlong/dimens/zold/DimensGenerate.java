@@ -6,6 +6,7 @@ import com.intellij.openapi.actionSystem.PlatformDataKeys;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.ui.Messages;
 import com.intellij.openapi.vfs.VirtualFile;
+import site.wenlong.dimens.core.Configuration;
 
 import static site.wenlong.dimens.zold.Config.PLUGINS_NAME;
 
