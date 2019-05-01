@@ -2,12 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ea667488-b463-48cc-bb21-edd129976e1c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/bean/DimensBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/languages/LanguagesEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/languages/LanguagesFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/languages/Text.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/utils/CalculateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/utils/DecimalUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/utils/FolderNameUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/utils/LegalUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Dimens-Generating/site/wenlong/dimens/zold/Setting.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dimens-Generating/site/wenlong/dimens/zold/Setting.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/META-INF/plugin.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/core/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/core/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/zold/DimensGenerate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/zold/DimensGenerate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/form/SettingDialog.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/form/SettingDialog.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/form/SettingDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/form/SettingDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/languages/Chinese.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/languages/Chinese.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/languages/English.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/languages/English.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/zold/DimensGenerate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/core/DimensGenerate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/zold/DimensionEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/zold/DimensionEntity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/zold/Setting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/zold/Setting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/zold/Utils.java" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,97 +49,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/form/SettingDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/zold/DimensGenerate.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="26" column="33" lean-forward="true" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
+            <state relative-caret-position="369">
+              <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3867#3868#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/zold/Setting.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="207">
-              <caret line="58" column="64" selection-start-line="58" selection-start-column="64" selection-end-line="58" selection-end-column="64" />
+            <state relative-caret-position="347">
+              <caret line="131" column="36" selection-start-line="131" selection-end-line="132" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/ui/components/JBCheckBox.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="20" column="38" lean-forward="true" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/src.zip!/javax/swing/JCheckBox.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="77" column="38" selection-start-line="77" selection-start-column="38" selection-end-line="77" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/src.zip!/javax/swing/JToggleButton.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="235" column="33" selection-start-line="235" selection-start-column="23" selection-end-line="235" selection-end-column="33" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/languages/English.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/languages/Chinese.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" selection-start-line="4" selection-end-line="4" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/core/Configuration.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="20" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#961#962#0" expanded="true" />
-                <element signature="e#988#989#0" expanded="true" />
-                <element signature="e#1063#1064#0" expanded="true" />
-                <element signature="e#1120#1121#0" expanded="true" />
-                <element signature="e#1225#1226#0" expanded="true" />
-                <element signature="e#1290#1291#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -136,6 +79,18 @@
           <provider selected="true" editor-type-id="ui-designer" />
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/core/Configuration.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="245">
+              <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
@@ -144,9 +99,10 @@
         <option value="ApplicationServiceInterface" />
         <option value="ApplicationServiceImplementation" />
         <option value="Action" />
-        <option value="Class" />
         <option value="ModuleServiceInterface" />
         <option value="ModuleServiceImplementation" />
+        <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -157,6 +113,14 @@
       <find>isControlDecimalBit</find>
       <find>isCurrentDimens</find>
       <find>isSelected</find>
+      <find>format</find>
+      <find>public</find>
+      <find>static</find>
+      <find>final</find>
+      <find>currentFile</find>
+      <find>windowStateListener</find>
+      <find>windowFocusListener</find>
+      <find>selection</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -182,12 +146,26 @@
         <option value="$PROJECT_DIR$/src/site/wenlong/dimens/Utils.java" />
         <option value="$PROJECT_DIR$/src/site/wenlong/dimens/Setting.java" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/site/wenlong/dimens/languages/English.java" />
-        <option value="$PROJECT_DIR$/src/site/wenlong/dimens/form/SettingDialog.form" />
         <option value="$PROJECT_DIR$/resources/META-INF/plugin.xml" />
         <option value="$PROJECT_DIR$/src/site/wenlong/dimens/zold/DimensGenerate.java" />
-        <option value="$PROJECT_DIR$/src/site/wenlong/dimens/core/Configuration.java" />
+        <option value="$PROJECT_DIR$/src/site/wenlong/dimens/bean/bean.java" />
+        <option value="$PROJECT_DIR$/src/site/wenlong/dimens/utils/DecimalUtils.java" />
+        <option value="$PROJECT_DIR$/src/site/wenlong/dimens/bean/DimensBean.java" />
+        <option value="$PROJECT_DIR$/src/site/wenlong/dimens/zold/DimensionEntity.java" />
+        <option value="$PROJECT_DIR$/src/site/wenlong/dimens/utils/CalculateUtils.java" />
+        <option value="$PROJECT_DIR$/src/site/wenlong/dimens/utils/FolderUtils.java" />
+        <option value="$PROJECT_DIR$/src/site/wenlong/dimens/utils/FolderNameUtils.java" />
+        <option value="$PROJECT_DIR$/src/site/wenlong/dimens/utils/LegalUtils.java" />
+        <option value="$PROJECT_DIR$/src/site/wenlong/dimens/languages/LanguagesEnum.java" />
         <option value="$PROJECT_DIR$/src/site/wenlong/dimens/zold/Setting.java" />
+        <option value="$PROJECT_DIR$/src/site/wenlong/dimens/core/DimensGenerate.java" />
+        <option value="$PROJECT_DIR$/src/site/wenlong/dimens/languages/LanguagesFactory.java" />
+        <option value="$PROJECT_DIR$/src/site/wenlong/dimens/form/SettingDialog.form" />
+        <option value="$PROJECT_DIR$/src/site/wenlong/dimens/languages/Text.java" />
+        <option value="$PROJECT_DIR$/src/site/wenlong/dimens/languages/Chinese.java" />
+        <option value="$PROJECT_DIR$/src/site/wenlong/dimens/languages/English.java" />
+        <option value="$PROJECT_DIR$/src/site/wenlong/dimens/core/Configuration.java" />
+        <option value="$PROJECT_DIR$/src/site/wenlong/dimens/form/SettingDialog.java" />
       </list>
     </option>
   </component>
@@ -204,7 +182,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="y" value="23" />
     <option name="width" value="1440" />
     <option name="height" value="813" />
@@ -256,6 +234,13 @@
               <item name="Dimens-Generating" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="dimens" type="462c0819:PsiDirectoryNode" />
+              <item name="bean" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dimens Generating" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dimens-Generating" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dimens" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -270,7 +255,22 @@
               <item name="Dimens-Generating" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="dimens" type="462c0819:PsiDirectoryNode" />
+              <item name="form" type="462c0819:PsiDirectoryNode" />
+              <item name="SettingDialog" type="e9f4de52:FormNode" />
+            </path>
+            <path>
+              <item name="Dimens Generating" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dimens-Generating" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dimens" type="462c0819:PsiDirectoryNode" />
               <item name="languages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Dimens Generating" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Dimens-Generating" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="dimens" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Dimens Generating" type="b2602c69:ProjectViewProjectNode" />
@@ -303,10 +303,10 @@
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="Dimens Generating V1.1.0" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW" value="false" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.STATE" value="right" />
-    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW" value="false" />
+    <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556557512594" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556699569083" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -314,7 +314,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3858093" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -344,7 +344,7 @@
       <module name="Dimens-Generating" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="site.wenlong.dimens.*" />
+          <option name="PATTERN" value="site.wenlong.dimens.bean.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -479,7 +479,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109525000" />
+    <option name="totallyTimeSpent" value="126710000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -491,10 +491,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="813" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17167382" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21459228" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -502,8 +502,8 @@
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32952926" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32732317" />
+      <window_info anchor="bottom" id="Find" order="1" visible="true" weight="0.32891566" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28433734" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39892185" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -512,18 +512,18 @@
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32871014" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.29403606" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.32884097" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32771084" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Database" order="5" weight="0.32969153" />
+      <window_info anchor="right" id="Database" order="5" weight="0.32904148" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info anchor="right" id="Maven Projects" order="8" />
-      <window_info anchor="right" id="Maven" order="9" weight="0.32969153" />
+      <window_info anchor="right" id="Maven" order="9" weight="0.32904148" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -557,43 +557,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://I:/Jdk8/src.zip!/javax/swing/AbstractButton.java" />
-    <entry file="jar://I:/Jdk8/src.zip!/java/awt/Rectangle.java" />
-    <entry file="jar://I:/Jdk8/src.zip!/java/awt/Window.java" />
-    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/Info.form" />
-    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/Info.java" />
-    <entry file="jar://I:/Jdk8/src.zip!/javax/swing/JFrame.java" />
-    <entry file="jar://I:/Jdk8/src.zip!/java/awt/Dimension.java" />
-    <entry file="jar://$PROJECT_DIR$/lib/dom4j-2.1.1.jar!/org/dom4j/io/XMLWriter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="42" column="13" selection-start-line="42" selection-start-column="13" selection-end-line="42" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/AA.java" />
-    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/AA.form" />
-    <entry file="jar://I:/Jdk8/src.zip!/java/io/File.java" />
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/openapi/vfs/VirtualFile.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="148">
-          <caret line="483" column="63" selection-start-line="483" selection-start-column="54" selection-end-line="483" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/dimens.xml" />
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1368">
-          <caret line="72" column="17" selection-start-line="72" selection-start-column="17" selection-end-line="72" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/screenMatch.properties" />
-    <entry file="file://$PROJECT_DIR$/screenMatch_example_dimens.xml" />
-    <entry file="file://$PROJECT_DIR$/Dimens-Generating.iml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Document/develop.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -601,17 +564,6 @@
             <caret line="5" column="12" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/zold/Utils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="e#488#489#0" expanded="true" />
-            <element signature="e#546#547#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -702,17 +654,6 @@
       </provider>
     </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_131/src.zip!/java/awt/Window.java" />
-    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/zold/DimensionEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="76">
-          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
-          <folding>
-            <element signature="e#508#509#0" expanded="true" />
-            <element signature="e#572#573#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -720,20 +661,6 @@
             <caret line="29" column="17" lean-forward="true" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/languages/English.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/languages/Chinese.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
         </state>
       </provider>
     </entry>
@@ -747,24 +674,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/zold/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/src.zip!/javax/swing/text/Element.java" />
-    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/form/SettingDialog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="50" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/form/SettingDialog.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/openapi/components/Storage.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-62">
@@ -779,42 +689,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/impl/GenerateImpl.java">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="78" lean-forward="true" selection-start-line="78" selection-end-line="78" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/zold/DimensGenerate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="26" column="33" lean-forward="true" selection-start-line="26" selection-start-column="33" selection-end-line="26" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/zold/Setting.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/core/Configuration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="20" lean-forward="true" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#961#962#0" expanded="true" />
-            <element signature="e#988#989#0" expanded="true" />
-            <element signature="e#1063#1064#0" expanded="true" />
-            <element signature="e#1120#1121#0" expanded="true" />
-            <element signature="e#1225#1226#0" expanded="true" />
-            <element signature="e#1290#1291#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-api.jar!/com/intellij/ui/components/JBCheckBox.class">
       <provider selected="true" editor-type-id="text-editor">
@@ -837,12 +711,245 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/zold/Setting.java">
+    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/zold/Utils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="207">
-          <caret line="58" column="64" selection-start-line="58" selection-start-column="64" selection-end-line="58" selection-end-column="64" />
+        <state relative-caret-position="135">
+          <caret line="9" column="27" lean-forward="true" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
+          <folding>
+            <element signature="e#493#494#0" expanded="true" />
+            <element signature="e#551#552#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/zold/DimensionEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="16" column="5" lean-forward="true" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/bean/DimensBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="30" selection-start-line="10" selection-start-column="30" selection-end-line="10" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/utils/FolderNameUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/utils/DecimalUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="9" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/utils/CalculateUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+          <folding>
+            <element signature="e#354#355#0" expanded="true" />
+            <element signature="e#406#407#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/languages/LanguagesEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="2" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/zold/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/META-INF/plugin.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="80" column="38" lean-forward="true" selection-start-line="80" selection-start-column="38" selection-end-line="80" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/core/DimensGenerate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="32" selection-start-line="32" selection-end-line="32" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/src.zip!/java/awt/Component.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="5293" column="29" selection-start-line="5293" selection-start-column="29" selection-end-line="5293" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/src.zip!/java/awt/Window.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="28837">
+          <caret line="2096" column="58" selection-start-line="2096" selection-start-column="39" selection-end-line="2096" selection-end-column="58" />
+          <folding>
+            <element signature="e#40240#40241#0" expanded="true" />
+            <element signature="e#40267#40268#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/zold/Setting.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/src.zip!/java/awt/event/ItemListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/src.zip!/javax/swing/JComboBox.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="838" column="36" lean-forward="true" selection-start-line="838" selection-start-column="36" selection-end-line="838" selection-end-column="36" />
+          <folding>
+            <element signature="e#28241#28242#0" expanded="true" />
+            <element signature="e#28303#28304#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/src.zip!/java/awt/event/ItemEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="84" column="28" selection-start-line="84" selection-start-column="28" selection-end-line="84" selection-end-column="28" />
+          <folding>
+            <element signature="e#4872#4873#0" expanded="true" />
+            <element signature="e#4906#4907#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/src.zip!/java/awt/AWTEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="391" column="15" selection-start-line="391" selection-start-column="15" selection-end-line="391" selection-end-column="15" />
+          <folding>
+            <element signature="e#11604#11605#0" expanded="true" />
+            <element signature="e#11629#11630#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/languages/LanguagesFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="37" selection-start-line="16" selection-start-column="37" selection-end-line="16" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/form/SettingDialog.form">
+      <provider selected="true" editor-type-id="ui-designer" />
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/src.zip!/javax/swing/ButtonModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="75" column="17" selection-start-line="75" selection-start-column="17" selection-end-line="75" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/src.zip!/javax/swing/ButtonGroup.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="157" column="39" selection-start-line="157" selection-start-column="28" selection-end-line="157" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_202.jdk/Contents/Home/src.zip!/javax/swing/JRadioButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-739">
+          <caret line="88" column="13" selection-start-line="88" selection-start-column="13" selection-end-line="88" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/utils/LegalUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="34" column="10" selection-start-line="34" selection-start-column="10" selection-end-line="34" selection-end-column="10" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/zold/Setting.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="131" column="36" selection-start-line="131" selection-end-line="132" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/languages/Chinese.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="29" column="46" selection-start-line="29" selection-start-column="38" selection-end-line="29" selection-end-column="46" />
+          <folding>
+            <element signature="e#2110#2111#0" expanded="true" />
+            <element signature="e#2137#2138#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/languages/English.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="397">
+          <caret line="29" column="69" selection-start-line="29" selection-start-column="69" selection-end-line="29" selection-end-column="69" />
+          <folding>
+            <element signature="e#2336#2337#0" expanded="true" />
+            <element signature="e#2374#2375#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/languages/Text.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="38" column="29" selection-start-line="38" selection-start-column="29" selection-end-line="38" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/core/Configuration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="245">
+          <caret line="24" column="23" selection-start-line="24" selection-start-column="23" selection-end-line="24" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/form/SettingDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3867#3868#0" expanded="true" />
           </folding>
         </state>
       </provider>

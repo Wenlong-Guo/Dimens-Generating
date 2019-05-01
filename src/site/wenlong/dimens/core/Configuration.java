@@ -7,20 +7,27 @@ import com.intellij.util.xmlb.XmlSerializerUtil;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
+/**
+ * 插件保存数据
+ *
+ * @author : 郭文龙
+ * @date : 2019/4/30  23:30
+ */
 @State(name = "Configuration", storages = {@com.intellij.openapi.components.Storage(value = "$APP_CONFIG$/Configuration.xml")})
 public class Configuration implements PersistentStateComponent<Configuration> {
+    public final static String DEFAULT_FILE_NAME = "dimens.xml";
+    public final static String PLUGINS_NAME = "Dimens Generating Tools";
     public boolean isCover;
     public boolean isKeepPoint;
     public boolean isMinWidth;
     public boolean isReName;
     public boolean isSingle;
-    public boolean isMultiple;
-    public String mBit = "2";
+    public int mBit = 2;
     public String mOriginWidth = "360";
     public String mRename = "sw";
     public String mSingle = "400";
     public String mMulitple = "300,320,340,360,380,400,420,440,460,480,500";
-
+    public int languageIndex = 0;
     @Nullable
     @Override
     public Configuration getState() {

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="site.wenlong.dimens.form.SettingDialog">
-  <grid id="27dc6" binding="panel" layout-manager="GridLayoutManager" row-count="5" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="mRoot" layout-manager="GridLayoutManager" row-count="5" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="10" left="20" bottom="20" right="20"/>
     <constraints>
       <xy x="20" y="20" width="1012" height="394"/>
@@ -18,7 +18,7 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="76298" class="javax.swing.JCheckBox" binding="overwriteExistingFilesCheckBox" default-binding="true">
+          <component id="76298" class="javax.swing.JCheckBox" binding="cbCover">
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -26,7 +26,7 @@
               <text value="Overwrite existing files"/>
             </properties>
           </component>
-          <component id="9c5ab" class="javax.swing.JCheckBox" binding="keepTheDecimalPointCheckBox" default-binding="true">
+          <component id="9c5ab" class="javax.swing.JCheckBox" binding="cbDecimal">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -34,7 +34,7 @@
               <text value="Keep the decimal point"/>
             </properties>
           </component>
-          <component id="2f314" class="javax.swing.JCheckBox" binding="setTheMinimumWidthCheckBox" default-binding="true">
+          <component id="2f314" class="javax.swing.JCheckBox" binding="cbMinWidth">
             <constraints>
               <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -42,7 +42,7 @@
               <text value="Set the minimum width of the selected dimens.xml "/>
             </properties>
           </component>
-          <component id="157b1" class="javax.swing.JCheckBox" binding="setTheQualifierNameCheckBox" default-binding="true">
+          <component id="157b1" class="javax.swing.JCheckBox" binding="cbFolder">
             <constraints>
               <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -50,15 +50,16 @@
               <text value="Set the qualifier name (default sw) (Note: no matter how you name it will not change the rules for file generation)"/>
             </properties>
           </component>
-          <component id="4a67b" class="javax.swing.JButton" binding="moreButton" default-binding="true">
+          <component id="4a67b" class="javax.swing.JButton" binding="btnMore">
             <constraints>
               <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <text value="more"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="31ac3" class="javax.swing.JLabel">
+          <component id="31ac3" class="javax.swing.JLabel" binding="tvBit">
             <constraints>
               <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -66,7 +67,7 @@
               <text value="bit"/>
             </properties>
           </component>
-          <component id="8ca9a" class="javax.swing.JLabel">
+          <component id="8ca9a" class="javax.swing.JLabel" binding="tvDp">
             <constraints>
               <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -74,7 +75,7 @@
               <text value="dp"/>
             </properties>
           </component>
-          <component id="89b1" class="javax.swing.JTextField" binding="textField2" default-binding="true">
+          <component id="89b1" class="javax.swing.JTextField" binding="etDecimal">
             <constraints>
               <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <preferred-size width="114" height="30"/>
@@ -82,7 +83,7 @@
             </constraints>
             <properties/>
           </component>
-          <component id="e0326" class="javax.swing.JTextField" default-binding="true">
+          <component id="e0326" class="javax.swing.JTextField" binding="etMinWidth">
             <constraints>
               <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <preferred-size width="114" height="30"/>
@@ -90,7 +91,7 @@
             </constraints>
             <properties/>
           </component>
-          <component id="26277" class="javax.swing.JTextField" default-binding="true">
+          <component id="26277" class="javax.swing.JTextField" binding="etFolder">
             <constraints>
               <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <preferred-size width="114" height="30"/>
@@ -100,7 +101,7 @@
           </component>
         </children>
       </grid>
-      <component id="de116" class="javax.swing.JComboBox" binding="comboBox1" default-binding="true">
+      <component id="de116" class="javax.swing.JComboBox" binding="comboBox">
         <constraints>
           <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="2" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -111,16 +112,19 @@
           </model>
         </properties>
       </component>
-      <component id="61e09" class="javax.swing.JButton" binding="generatingDimensButton" default-binding="true">
+      <component id="61e09" class="javax.swing.JButton" binding="btnGenerate">
         <constraints>
-          <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="7" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="300" height="-1"/>
+          </grid>
         </constraints>
         <properties>
+          <horizontalTextPosition value="0"/>
           <margin top="10" left="30" bottom="10" right="30"/>
-          <text value="Generating dimens "/>
+          <text value="Genarate dimens "/>
         </properties>
       </component>
-      <component id="3a1de" class="javax.swing.JLabel">
+      <component id="3a1de" class="javax.swing.JLabel" binding="titleTwo">
         <constraints>
           <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -128,7 +132,7 @@
           <text value="Generation Mode"/>
         </properties>
       </component>
-      <component id="34cc8" class="javax.swing.JLabel">
+      <component id="34cc8" class="javax.swing.JLabel" binding="titleOne">
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
         </constraints>
@@ -144,15 +148,15 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="4345f" class="javax.swing.JRadioButton" binding="singleRadioButton" default-binding="true">
+          <component id="4345f" class="javax.swing.JRadioButton" binding="rbSingle">
             <constraints>
               <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
-              <text value="single"/>
+              <text value="Single"/>
             </properties>
           </component>
-          <component id="27111" class="javax.swing.JRadioButton" default-binding="true">
+          <component id="27111" class="javax.swing.JRadioButton" binding="rbMultiple">
             <constraints>
               <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -160,39 +164,45 @@
               <text value="Multiple"/>
             </properties>
           </component>
-          <component id="4cef3" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+          <component id="4cef3" class="javax.swing.JTextField" binding="etSingle">
             <constraints>
               <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="0" indent="0" use-parent-layout="false">
                 <preferred-size width="150" height="-1"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <text value="400"/>
+            </properties>
           </component>
-          <component id="687e9" class="javax.swing.JTextField" default-binding="true">
+          <component id="687e9" class="javax.swing.JTextField" binding="etMultiple">
             <constraints>
               <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
                 <preferred-size width="150" height="-1"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <text value="300,320,340,360,380,400,420,440,460,500"/>
+            </properties>
           </component>
-          <component id="e755d" class="javax.swing.JButton" binding="advancedOptionButton" default-binding="true">
+          <component id="e755d" class="javax.swing.JButton" binding="btnSingleOption">
             <constraints>
               <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <text value="advanced option"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="f5469" class="javax.swing.JButton" default-binding="true">
+          <component id="f5469" class="javax.swing.JButton" binding="btnMultipleOption">
             <constraints>
               <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
             </constraints>
             <properties>
               <text value="advanced option"/>
+              <visible value="false"/>
             </properties>
           </component>
-          <component id="7f663" class="javax.swing.JLabel">
+          <component id="7f663" class="javax.swing.JLabel" binding="tvDpSingle">
             <constraints>
               <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>
@@ -200,7 +210,7 @@
               <text value="dp"/>
             </properties>
           </component>
-          <component id="8aa1b" class="javax.swing.JLabel">
+          <component id="8aa1b" class="javax.swing.JLabel" binding="tvDpMultiple">
             <constraints>
               <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
             </constraints>

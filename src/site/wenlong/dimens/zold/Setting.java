@@ -22,9 +22,6 @@ import java.util.Objects;
 
 import static site.wenlong.dimens.zold.Config.PLUGINS_NAME;
 
-/**
- * TODO UI 颜色还需要调整一下下
- */
 public class Setting extends JFrame {
     private Configuration configuration = Configuration.getInstance();
 
@@ -68,6 +65,8 @@ public class Setting extends JFrame {
             JBCheckBox checkbox = (JBCheckBox) e.getSource();
             isCoverEnable = checkbox.isSelected();
             Config.IS_COVER_FILE = isCoverEnable;
+            configuration.isCover = isCoverEnable;
+            configuration.getState();
         });
         mCb_decimalLength.addChangeListener(e -> {
             JBCheckBox checkBox = (JBCheckBox) e.getSource();
