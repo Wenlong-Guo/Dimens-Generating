@@ -1,9 +1,10 @@
 package site.wenlong.dimens.zold;
 
+import site.wenlong.dimens.utils.DecimalUtils;
+
 public class DimensionEntity {
 
     public DimensionEntity(float originDimension, float toDimension, String qualifierName) {
-
         this.scale = originDimension / toDimension;
         this.folderName = "values-" + qualifierName + (int) toDimension + "dp";
     }
@@ -20,6 +21,6 @@ public class DimensionEntity {
     }
 
     public String calculateDimension(float dimens, int length) {
-        return Utils.trimDecimal(dimens / scale, length);
+        return DecimalUtils.formatDecimal(dimens / scale, length);
     }
 }

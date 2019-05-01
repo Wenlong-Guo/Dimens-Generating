@@ -71,13 +71,16 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
-
+        <applicationService
+                serviceImplementation="site.wenlong.dimens.core.Configuration"
+                serviceInterface="site.wenlong.dimens.core.Configuration"
+        />
     </extensions>
 
     <actions>
         <!-- Add your actions here -->
 
-        <action id="dimensGenerate" class="site.wenlong.dimens.zold.DimensGenerate" text="Generate Dimens"
+        <action id="dimensGenerate" class="site.wenlong.dimens.core.DimensGenerate" text="Generate Dimens"
                 description="DimensGeneratingMenuAction">
             <add-to-group group-id="ProjectViewCompileGroup" anchor="first"/>
         </action>
