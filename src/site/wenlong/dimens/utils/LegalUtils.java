@@ -20,19 +20,13 @@ public class LegalUtils {
         return true;
     }
 
-    public static boolean isMultipleNumber(String inputString) {
-        String[] split = inputString.split(",");
-        for (String num : split) {
-            try {
-                Float.valueOf(num);
-            } catch (Exception e) {
-                return false;
-            }
-        }
-        return true;
-    }
-
     public static boolean isDimensFile(VirtualFile currentFile) {
         return currentFile != null && currentFile.getName().equals(Configuration.DEFAULT_FILE_NAME);
     }
+
+    public static float getNumber(String inputString) throws NumberFormatException {
+        return Float.valueOf(inputString);
+    }
+
+
 }

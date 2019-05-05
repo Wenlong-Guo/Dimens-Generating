@@ -23,7 +23,7 @@ public class Configuration implements PersistentStateComponent<Configuration> {
     public boolean isReName;
     public boolean isSingle;
     public int mBit = 2;
-    public String mOriginWidth = "360";
+    public float mOriginWidth = 360F;
     public String mRename = "sw";
     public String mSingle = "400";
     public String mMulitple = "300,320,340,360,380,400,420,440,460,480,500";

@@ -1,6 +1,6 @@
 package site.wenlong.dimens.zold;
 
-import site.wenlong.dimens.utils.DecimalUtils;
+import site.wenlong.dimens.utils.CalculateUtils;
 
 public class DimensionEntity {
 
@@ -21,6 +21,6 @@ public class DimensionEntity {
     }
 
     public String calculateDimension(float dimens, int length) {
-        return DecimalUtils.formatDecimal(dimens / scale, length);
+        return CalculateUtils.formatDecimal(dimens / scale, length);
     }
 }
