@@ -111,4 +111,24 @@ public class English implements Text {
     public String getTipsErrorNumber() {
         return tipsErrorNumber;
     }
+
+    @Override
+    public String getTipsCreateFileFailed() {
+        return "File does not exist or folder creation failed";
+    }
+
+    @Override
+    public String getTipsCreateFileError() {
+        return "Generate xml file or folder exception, please submit a question to github, thanks";
+    }
+
+    @Override
+    public String getTipsGenerateSuccess() {
+        return "Generated successfully";
+    }
+
+    @Override
+    public String getTipsDimensExists() {
+        return "The dimens.xml file of the %s folder already exists.\n Please check the Dimens Generating Tools menu to overwrite the source file \n or delete and regenerate after backup.";
+    }
 }

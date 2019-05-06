@@ -10,7 +10,8 @@ import site.wenlong.dimens.form.SettingDialog;
 import site.wenlong.dimens.languages.LanguagesFactory;
 import site.wenlong.dimens.utils.LegalUtils;
 
-import static site.wenlong.dimens.zold.Config.PLUGINS_NAME;
+import static site.wenlong.dimens.core.Configuration.PLUGINS_NAME;
+
 
 /**
  * Dimens插件的Action

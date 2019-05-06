@@ -7,31 +7,9 @@ package site.wenlong.dimens.languages;
  * @date : 2019/4/30  23:30
  */
 public class Chinese implements Text {
-    private String titleOne = "设置选项";
-
-    private String cover = "是否覆盖已有文件";
-    private String decimal = "保留几位小数的位数";
-    private String minWidth = "设置所选中的dimens.xml的最小宽度(默认屏幕最小宽度360dp)";
-    private String folder = "设置限定符名字(默认sw)(注意:命名不影响文件生成的规则)";
-
-    private String bit = "位";
-    private String dp = "dp";
-    private String more = "更多";
-
-    private String titleTwo = "生成文件模式";
-
-    private String single = "单个生成";
-    private String multiple = "多个生成";
-
-    private String advancedOption = "扩展选项";
-    private String genarate = "生成Dimens";
-    // 提示语
-    private String tipsErrorFile = "您选择的文件不是dimens.xml,请重新选择";
-    private String tipsErrorNumber = "请输入正确的数字";
-
     private static Chinese instance;
 
-    public static synchronized Chinese getInstance() {
+    static synchronized Chinese getInstance() {
         if (instance == null) {
             instance = new Chinese();
         }
@@ -40,75 +18,96 @@ public class Chinese implements Text {
 
     @Override
     public String getTitleOne() {
-        return titleOne;
+        return "设置选项";
     }
 
     @Override
     public String getCover() {
-        return cover;
+        return "是否覆盖已有文件";
     }
 
     @Override
     public String getDecimal() {
-        return decimal;
+        return "保留几位小数的位数";
     }
 
     @Override
     public String getMinWidth() {
-        return minWidth;
+        return "设置所选中的dimens.xml的最小宽度(默认屏幕最小宽度360dp)";
     }
 
     @Override
     public String getFolder() {
-        return folder;
+        return "设置限定符名字(默认sw)(注意:命名不影响文件生成的规则)";
     }
 
     @Override
     public String getBit() {
-        return bit;
+        return "位";
     }
 
     @Override
     public String getDp() {
-        return dp;
+        return "dp";
     }
 
     @Override
     public String getMore() {
-        return more;
+        return "更多";
     }
 
     @Override
     public String getTitleTwo() {
-        return titleTwo;
+        return "生成文件模式";
     }
 
     @Override
     public String getSingle() {
-        return single;
+        return "单个生成";
     }
 
     @Override
     public String getMultiple() {
-        return multiple;
+        return "多个生成";
     }
 
     @Override
     public String getAdvancedOption() {
-        return advancedOption;
+        return "扩展选项";
     }
 
+    // 提示语
     public String getTipsErrorFile() {
-        return tipsErrorFile;
+        return "您选择的文件不是dimens.xml,请重新选择";
     }
 
     @Override
     public String getGenarate() {
-        return genarate;
+        return "生成Dimens";
     }
 
     @Override
     public String getTipsErrorNumber() {
-        return tipsErrorNumber;
+        return "请输入正确的数字";
+    }
+
+    @Override
+    public String getTipsCreateFileFailed() {
+        return "文件不存在或者创建文件夹失败";
+    }
+
+    @Override
+    public String getTipsCreateFileError() {
+        return "生成xml文件或文件夹异常,请提交问题到github,感谢";
+    }
+
+    @Override
+    public String getTipsGenerateSuccess() {
+        return "生成成功";
+    }
+
+    @Override
+    public String getTipsDimensExists() {
+        return "已经存在%s文件夹的dimens.xml文件\n请在Dimens Generating Tools的菜单中勾选可以覆盖源文件\n或者备份后删除重新生成";
     }
 }

@@ -16,7 +16,6 @@ import site.wenlong.dimens.languages.Text;
 import site.wenlong.dimens.tools.InputTools;
 import site.wenlong.dimens.utils.CalculateUtils;
 import site.wenlong.dimens.utils.FolderNameUtils;
-import site.wenlong.dimens.zold.Config;
 
 import javax.swing.*;
 import javax.swing.event.DocumentEvent;
@@ -30,7 +29,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-import static site.wenlong.dimens.zold.Config.PLUGINS_NAME;
+import static site.wenlong.dimens.core.Configuration.DEFAULT_FILE_NAME;
+import static site.wenlong.dimens.core.Configuration.PLUGINS_NAME;
+
 
 /**
  * 插件面板
@@ -89,81 +90,76 @@ public class SettingDialog extends JFrame {
         etDecimal.getDocument().addDocumentListener(new DocumentListener() {
             @Override
             public void insertUpdate(DocumentEvent e) {
-
+                configuration.mBit = Integer.valueOf(etDecimal.getText());
             }
 
             @Override
             public void removeUpdate(DocumentEvent e) {
-
+                configuration.mBit = Integer.valueOf(etDecimal.getText());
             }
 
             @Override
             public void changedUpdate(DocumentEvent e) {
-                configuration.mBit = Integer.valueOf(etDecimal.getText());
             }
         });
         etMinWidth.getDocument().addDocumentListener(new DocumentListener() {
             @Override
             public void insertUpdate(DocumentEvent e) {
-
+                configuration.mOriginWidth = Float.valueOf(etMinWidth.getText());
             }
 
             @Override
             public void removeUpdate(DocumentEvent e) {
-
+                configuration.mOriginWidth = Float.valueOf(etMinWidth.getText());
             }
 
             @Override
             public void changedUpdate(DocumentEvent e) {
-                configuration.mOriginWidth = Float.valueOf(etMinWidth.getText());
             }
         });
         etFolder.getDocument().addDocumentListener(new DocumentListener() {
             @Override
             public void insertUpdate(DocumentEvent e) {
-
+                configuration.mRename = String.valueOf(etFolder.getText());
             }
 
             @Override
             public void removeUpdate(DocumentEvent e) {
-
+                configuration.mRename = String.valueOf(etFolder.getText());
             }
 
             @Override
             public void changedUpdate(DocumentEvent e) {
-                configuration.mRename = String.valueOf(etFolder.getText());
             }
         });
         etSingle.getDocument().addDocumentListener(new DocumentListener() {
             @Override
             public void insertUpdate(DocumentEvent e) {
-
+                configuration.mSingle = String.valueOf(etSingle.getText());
             }
 
             @Override
             public void removeUpdate(DocumentEvent e) {
-
+                configuration.mSingle = String.valueOf(etSingle.getText());
             }
 
             @Override
             public void changedUpdate(DocumentEvent e) {
-                configuration.mSingle = String.valueOf(etSingle.getText());
             }
         });
         etMultiple.getDocument().addDocumentListener(new DocumentListener() {
             @Override
             public void insertUpdate(DocumentEvent e) {
-
+                configuration.mMulitple = String.valueOf(etMultiple.getText());
             }
 
             @Override
             public void removeUpdate(DocumentEvent e) {
-
+                configuration.mMulitple = String.valueOf(etMultiple.getText());
             }
 
             @Override
             public void changedUpdate(DocumentEvent e) {
-                configuration.mMulitple = String.valueOf(etMultiple.getText());
             }
         });
     }
@@ -190,43 +186,49 @@ public class SettingDialog extends JFrame {
                 Messages.showMessageDialog(mText.getTipsErrorNumber(), PLUGINS_NAME, Messages.getInformationIcon());
                 return;
             } catch (DocumentException e) {
-                Messages.showMessageDialog("加载xml文件异常,请提交问题到github,感谢", PLUGINS_NAME, Messages.getInformationIcon());
+                Messages.showMessageDialog(mText.getTipsCreateFileError(), PLUGINS_NAME, Messages.getInformationIcon());
                 return;
             }
             try {
                 if (isSingle) {
-                    generateSingle(document, currentFile, configuration.isCover, decimal, minWidth, folderName, target);
+                    generateSingle(currentFile, configuration.isCover, decimal, minWidth, folderName, target);
                 } else {
-                    generateMultiple(document, currentFile, configuration.isCover, decimal, minWidth, folderName, targets);
+                    generateMultiple(currentFile, configuration.isCover, decimal, minWidth, folderName, targets);
                 }
             } catch (CreateFileException e) {
-                Messages.showMessageDialog("文件不存在或者创建文件夹失败", PLUGINS_NAME, Messages.getInformationIcon());
+                Messages.showMessageDialog(mText.getTipsCreateFileFailed(), PLUGINS_NAME, Messages.getInformationIcon());
                 return;
             } catch (FileExistsException e) {
                 Messages.showMessageDialog(e.getMessage(), PLUGINS_NAME, Messages.getInformationIcon());
                 return;
             } catch (IOException e) {
-                Messages.showMessageDialog("生成xml文件或文件夹异常,请提交问题到github,感谢", PLUGINS_NAME, Messages.getInformationIcon());
+                Messages.showMessageDialog(mText.getTipsCreateFileError(), PLUGINS_NAME, Messages.getInformationIcon());
                 return;
             }
             dispose();
             Objects.requireNonNull(project.getProjectFile()).getFileSystem().refresh(true);
-            Messages.showMessageDialog("生成成功", PLUGINS_NAME, Messages.getInformationIcon());
+            Messages.showMessageDialog(mText.getTipsGenerateSuccess(), PLUGINS_NAME, Messages.getInformationIcon());
         });
     }
 
-    private void generateSingle(Document document, VirtualFile currentFile, boolean isCover, int decimal, float originDimens, String qualifierName, float targetDimens) throws IOException, CreateFileException, FileExistsException {
-        Document converedDocument = converDimension(document, decimal, targetDimens, originDimens);
-        createDimensFile(converedDocument, currentFile.getParent().getParent().getCanonicalPath(), FolderNameUtils.splicingFolderName(qualifierName, targetDimens), isCover);
+    private void generateSingle(VirtualFile currentFile, boolean isCover, int decimal, float originDimens, String qualifierName, float targetDimens) throws IOException, CreateFileException, FileExistsException {
+        try {
+            Document document = new SAXReader().read(new File(Objects.requireNonNull(currentFile.getCanonicalPath())));
+            Document converedDocument = converDimension(document, decimal, targetDimens, originDimens);
+            createDimensFile(converedDocument, currentFile.getParent().getParent().getCanonicalPath(), FolderNameUtils.splicingFolderName(qualifierName, targetDimens), isCover);
+        } catch (DocumentException e) {
+            e.printStackTrace();
+        }
     }
 
-    private void generateMultiple(Document document, VirtualFile currentFile, boolean isCover, int decimal, float minWidth, String folderName, ArrayList<Float> targets) throws IOException, CreateFileException, FileExistsException {
+    private void generateMultiple(VirtualFile currentFile, boolean isCover, int decimal, float minWidth, String folderName, ArrayList<Float> targets) throws IOException, CreateFileException, FileExistsException {
         for (float target : targets) {
-            generateSingle(document, currentFile, isCover, decimal, minWidth, folderName, target);
+            generateSingle(currentFile, isCover, decimal, minWidth, folderName, target);
         }
     }
 
     private Document converDimension(Document document, int decimal, float targetDimens, float originDimens) {
+        float scale = originDimens / targetDimens;
         Document coverDocument = document;
         Element rootElement = coverDocument.getRootElement();
         List<Element> elements = rootElement.elements();
@@ -238,13 +240,13 @@ public class SettingDialog extends JFrame {
             float subElementValue;
             if (subElementValueString.endsWith("dp")) {
                 subElementValue = Float.valueOf(subElementValueString.substring(0, subElementValueString.length() - 2));
-                subElement.setText(CalculateUtils.targetDimension(subElementValue, decimal, CalculateUtils.scale(originDimens, targetDimens)) + "dp");
+                subElement.setText(CalculateUtils.targetDimension(subElementValue, decimal, scale) + "dp");
             } else if (subElementValueString.endsWith("sp")) {
                 subElementValue = Float.valueOf(subElementValueString.substring(0, subElementValueString.length() - 2));
-                subElement.setText(CalculateUtils.targetDimension(subElementValue, decimal, CalculateUtils.scale(originDimens, targetDimens)) + "sp");
+                subElement.setText(CalculateUtils.targetDimension(subElementValue, decimal, scale) + "sp");
             } else if (subElementValueString.endsWith("dip")) {
                 subElementValue = Float.valueOf(subElementValueString.substring(0, subElementValueString.length() - 3));
-                subElement.setText(CalculateUtils.targetDimension(subElementValue, decimal, CalculateUtils.scale(originDimens, targetDimens)) + "dip");
+                subElement.setText(CalculateUtils.targetDimension(subElementValue, decimal, scale) + "dip");
             }
         }
         return coverDocument;
@@ -256,12 +258,9 @@ public class SettingDialog extends JFrame {
         if (!parentFolder.exists() && !parentFolder.mkdir()) {
             throw new CreateFileException();
         }
-        File dimensFile = new File(parentFolder + "/" + Config.DEFAULT_FILE_NAME);
+        File dimensFile = new File(parentFolder + "/" + DEFAULT_FILE_NAME);
         if (!isCover && dimensFile.exists()) {
-            throw new FileExistsException("已经存在" + customFolderName +
-                    "文件夹的" + Config.DEFAULT_FILE_NAME + "文件" + "\n" +
-                    "请在Dimens Generating Tools的菜单中勾选可以覆盖源文件" + "\n" +
-                    "或者备份后删除重新生成");
+            throw new FileExistsException(String.format(mText.getTipsDimensExists(), customFolderName));
         }
         dimensFile.delete();
         FileOutputStream fileOutputStream = new FileOutputStream(dimensFile);
@@ -318,6 +317,11 @@ public class SettingDialog extends JFrame {
         cbDecimal.setSelected(configuration.isKeepPoint);
         cbMinWidth.setSelected(configuration.isMinWidth);
         cbFolder.setSelected(configuration.isReName);
+        etDecimal.setText(String.valueOf(configuration.mBit));
+        etMinWidth.setText(String.valueOf(configuration.mOriginWidth));
+        etFolder.setText(configuration.mRename);
+        etSingle.setText(configuration.mSingle);
+        etMultiple.setText(configuration.mMulitple);
         updateLanguagesUI();
     }
 

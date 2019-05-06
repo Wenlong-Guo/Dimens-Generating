@@ -37,4 +37,12 @@ public interface Text {
     String getTipsErrorFile();
 
     String getTipsErrorNumber();
+
+    String getTipsCreateFileFailed();
+
+    String getTipsCreateFileError();
+
+    String getTipsGenerateSuccess();
+
+    String getTipsDimensExists();
 }
