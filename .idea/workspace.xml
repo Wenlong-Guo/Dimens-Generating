@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ea667488-b463-48cc-bb21-edd129976e1c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dimens-Generating.zip" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dimens-Generating/site/wenlong/dimens/bean/DimensBean.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dimens-Generating/site/wenlong/dimens/core/DimensGenerate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dimens-Generating/site/wenlong/dimens/core/DimensGenerate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dimens-Generating/site/wenlong/dimens/form/SettingDialog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dimens-Generating/site/wenlong/dimens/form/SettingDialog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dimens-Generating/site/wenlong/dimens/languages/LanguagesEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dimens-Generating/site/wenlong/dimens/zold/Config.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dimens-Generating/site/wenlong/dimens/zold/DimensionEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dimens-Generating/site/wenlong/dimens/zold/Setting.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/bean/DimensBean.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/core/DimensGenerate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/core/DimensGenerate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/form/SettingDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/form/SettingDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/languages/Chinese.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/languages/Chinese.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/languages/English.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/languages/English.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/languages/LanguagesEnum.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/languages/Text.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/languages/Text.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/zold/Config.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/zold/DimensionEntity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/zold/Setting.form" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/zold/Setting.java" beforeDir="false" />
-    </list>
+    <list default="true" id="ea667488-b463-48cc-bb21-edd129976e1c" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -135,8 +114,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/form/SettingDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="262" column="101" selection-start-line="262" selection-start-column="101" selection-end-line="262" selection-end-column="101" />
+            <state relative-caret-position="334">
+              <caret line="271" lean-forward="true" selection-start-line="271" selection-end-line="271" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -364,7 +343,7 @@
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557134436412" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557134477096" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -537,7 +516,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161682000" />
+    <option name="totallyTimeSpent" value="162041000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -551,7 +530,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15938303" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15938303" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -560,14 +539,14 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32891566" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.28398386" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.28398386" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39892185" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32871014" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32871014" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.5208614" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.21938089" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32771084" />
       <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
@@ -936,8 +915,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/site/wenlong/dimens/form/SettingDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="262" column="101" selection-start-line="262" selection-start-column="101" selection-end-line="262" selection-end-column="101" />
+        <state relative-caret-position="334">
+          <caret line="271" lean-forward="true" selection-start-line="271" selection-end-line="271" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
