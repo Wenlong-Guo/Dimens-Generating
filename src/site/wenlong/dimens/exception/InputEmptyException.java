@@ -6,5 +6,5 @@ package site.wenlong.dimens.exception;
  * @author : 郭文龙
  * @date : 2019-05-09  00:22
  */
-public class inputEmptyException extends Exception {
+public class InputEmptyException extends Exception {
 }

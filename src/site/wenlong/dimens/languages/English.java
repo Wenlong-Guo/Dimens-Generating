@@ -131,4 +131,14 @@ public class English implements Text {
     public String getTipsDimensExists() {
         return "The dimens.xml file of the %s folder already exists.\n Please check the Dimens Generating Tools menu to overwrite the source file \n or delete and regenerate after backup.";
     }
+
+    @Override
+    public String getTipsInputEmpty() {
+        return "Do not allow input to be empty";
+    }
+
+    @Override
+    public String getTipsInputZero() {
+        return "Do not allow input numbers to be 0";
+    }
 }

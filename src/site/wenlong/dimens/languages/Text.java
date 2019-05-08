@@ -45,4 +45,8 @@ public interface Text {
     String getTipsGenerateSuccess();
 
     String getTipsDimensExists();
+
+    String getTipsInputEmpty();
+
+    String getTipsInputZero();
 }
