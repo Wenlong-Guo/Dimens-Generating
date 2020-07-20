@@ -77,10 +77,15 @@ public class Chinese implements Text {
     }
 
     // 提示语
+    @Override
     public String getTipsErrorFile() {
         return "您选择的文件不是dimens.xml,请重新选择";
     }
 
+    @Override
+    public String getLayoutTipsErrorFile() {
+        return "您选择的文件不是layout文件夹或者xml文件,请重新选择";
+    }
     @Override
     public String getGenarate() {
         return "生成Dimens";

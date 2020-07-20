@@ -14,13 +14,13 @@ import static site.wenlong.dimens.core.Configuration.PLUGINS_NAME;
 
 
 /**
- * Dimens插件的Action
+ * Dimens生成插件的Action
  *
  * @author : 郭文龙
  * @date : 2019/4/30  23:30
  */
 public class DimensGenerate extends AnAction {
-    private Configuration mConfiguration = Configuration.getInstance();
+    private final Configuration mConfiguration = Configuration.getInstance();
 
     @Override
     public void actionPerformed(AnActionEvent event) {

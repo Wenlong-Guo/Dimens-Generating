@@ -36,6 +36,8 @@ public interface Text {
 
     String getTipsErrorFile();
 
+    String getLayoutTipsErrorFile();
+
     String getTipsErrorNumber();
 
     String getTipsCreateFileFailed();

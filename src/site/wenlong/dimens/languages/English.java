@@ -27,6 +27,7 @@ public class English implements Text {
 
     //提示语
     private String tipsErrorFile = "The file you selected is not dimens.xml, please re-select";
+    private String layoutTipsErrorFile = "The file you selected is not layout folder or an xml file, please re-select";
     private String tipsErrorNumber = "Please enter the correct number";
 
     private static English instance;
@@ -100,6 +101,11 @@ public class English implements Text {
 
     public String getTipsErrorFile() {
         return tipsErrorFile;
+    }
+
+    @Override
+    public String getLayoutTipsErrorFile() {
+        return layoutTipsErrorFile;
     }
 
     @Override
