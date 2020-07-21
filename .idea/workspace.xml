@@ -25,33 +25,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea667488-b463-48cc-bb21-edd129976e1c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/core/DimensConverter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/form/ConverterDialog.form" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/form/ConverterDialog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/dom4j_2_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/dom4j_2_1_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ScreenShot/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dimens-Generating/META-INF/Dimens-Generating.kotlin_module" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dimens-Generating/META-INF/Dimens-Generating.kotlin_module" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dimens-Generating/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dimens-Generating/META-INF/plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dimens-Generating/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dimens-Generating/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dimens-Generating/com/intellij/uiDesigner/core/SupportCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dimens-Generating/com/intellij/uiDesigner/core/SupportCode.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dimens-Generating/site/wenlong/dimens/core/Configuration.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dimens-Generating/site/wenlong/dimens/core/Configuration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dimens-Generating/site/wenlong/dimens/core/DimensGenerate.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dimens-Generating/site/wenlong/dimens/core/DimensGenerate.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dimens-Generating/site/wenlong/dimens/form/SettingDialog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dimens-Generating/site/wenlong/dimens/form/SettingDialog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dimens-Generating/site/wenlong/dimens/languages/Chinese.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dimens-Generating/site/wenlong/dimens/languages/Chinese.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dimens-Generating/site/wenlong/dimens/languages/English.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dimens-Generating/site/wenlong/dimens/languages/English.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dimens-Generating/site/wenlong/dimens/languages/Text.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dimens-Generating/site/wenlong/dimens/languages/Text.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dimens-Generating/site/wenlong/dimens/tools/InputTools.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dimens-Generating/site/wenlong/dimens/tools/InputTools.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dimens-Generating/site/wenlong/dimens/utils/CalculateUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dimens-Generating/site/wenlong/dimens/utils/CalculateUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Dimens-Generating/site/wenlong/dimens/utils/LegalUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Dimens-Generating/site/wenlong/dimens/utils/LegalUtils.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/META-INF/plugin.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/core/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/core/Configuration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/core/DimensGenerate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/core/DimensGenerate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/languages/Chinese.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/languages/Chinese.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/languages/English.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/languages/English.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/languages/Text.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/languages/Text.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/utils/LegalUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/utils/LegalUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,7 +88,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557134477096" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ScreenShot" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -203,7 +178,8 @@
       <workItem from="1592818596594" duration="13281000" />
       <workItem from="1592986166995" duration="2802000" />
       <workItem from="1595217548269" duration="9252000" />
-      <workItem from="1595242465120" duration="1386000" />
+      <workItem from="1595242465120" duration="1425000" />
+      <workItem from="1595322676769" duration="896000" />
     </task>
     <task id="LOCAL-00001" summary="develop : 插件的基础功能已具备">
       <created>1540706000369</created>
@@ -330,52 +306,52 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="533" y="163" key="#com.intellij.ide.util.MemberChooser/0.0.1440.900@0.0.1440.900" timestamp="1592821343171" />
-    <state width="1398" height="207" key="GridCell.Tab.0.bottom" timestamp="1595243792067">
+    <state width="1398" height="207" key="GridCell.Tab.0.bottom" timestamp="1595243893899">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="207" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1595243792067" />
+    <state width="1398" height="207" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1595243893899" />
     <state width="1398" height="207" key="GridCell.Tab.0.bottom/0.23.1440.808@0.23.1440.808" timestamp="1592826229442" />
     <state width="1398" height="207" key="GridCell.Tab.0.bottom/0.23.1440.811@0.23.1440.811" timestamp="1595242758247" />
-    <state width="1398" height="207" key="GridCell.Tab.0.center" timestamp="1595243792065">
+    <state width="1398" height="207" key="GridCell.Tab.0.center" timestamp="1595243893898">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="207" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1595243792065" />
+    <state width="1398" height="207" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1595243893898" />
     <state width="1398" height="207" key="GridCell.Tab.0.center/0.23.1440.808@0.23.1440.808" timestamp="1592826229441" />
     <state width="1398" height="207" key="GridCell.Tab.0.center/0.23.1440.811@0.23.1440.811" timestamp="1595242758245" />
-    <state width="1398" height="207" key="GridCell.Tab.0.left" timestamp="1595243792064">
+    <state width="1398" height="207" key="GridCell.Tab.0.left" timestamp="1595243893898">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="207" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1595243792064" />
+    <state width="1398" height="207" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1595243893898" />
     <state width="1398" height="207" key="GridCell.Tab.0.left/0.23.1440.808@0.23.1440.808" timestamp="1592826229441" />
     <state width="1398" height="207" key="GridCell.Tab.0.left/0.23.1440.811@0.23.1440.811" timestamp="1595242758244" />
-    <state width="1398" height="207" key="GridCell.Tab.0.right" timestamp="1595243792067">
+    <state width="1398" height="207" key="GridCell.Tab.0.right" timestamp="1595243893899">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="207" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1595243792067" />
+    <state width="1398" height="207" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1595243893899" />
     <state width="1398" height="207" key="GridCell.Tab.0.right/0.23.1440.808@0.23.1440.808" timestamp="1592826229442" />
     <state width="1398" height="207" key="GridCell.Tab.0.right/0.23.1440.811@0.23.1440.811" timestamp="1595242758246" />
-    <state width="1398" height="207" key="GridCell.Tab.1.bottom" timestamp="1595243792070">
+    <state width="1398" height="207" key="GridCell.Tab.1.bottom" timestamp="1595243893902">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="207" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1595243792070" />
+    <state width="1398" height="207" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1595243893902" />
     <state width="1398" height="207" key="GridCell.Tab.1.bottom/0.23.1440.808@0.23.1440.808" timestamp="1592826229445" />
     <state width="1398" height="207" key="GridCell.Tab.1.bottom/0.23.1440.811@0.23.1440.811" timestamp="1595242758250" />
-    <state width="1398" height="207" key="GridCell.Tab.1.center" timestamp="1595243792068">
+    <state width="1398" height="207" key="GridCell.Tab.1.center" timestamp="1595243893901">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="207" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1595243792068" />
+    <state width="1398" height="207" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1595243893901" />
     <state width="1398" height="207" key="GridCell.Tab.1.center/0.23.1440.808@0.23.1440.808" timestamp="1592826229443" />
     <state width="1398" height="207" key="GridCell.Tab.1.center/0.23.1440.811@0.23.1440.811" timestamp="1595242758249" />
-    <state width="1398" height="207" key="GridCell.Tab.1.left" timestamp="1595243792068">
+    <state width="1398" height="207" key="GridCell.Tab.1.left" timestamp="1595243893900">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="207" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1595243792068" />
+    <state width="1398" height="207" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1595243893900" />
     <state width="1398" height="207" key="GridCell.Tab.1.left/0.23.1440.808@0.23.1440.808" timestamp="1592826229443" />
     <state width="1398" height="207" key="GridCell.Tab.1.left/0.23.1440.811@0.23.1440.811" timestamp="1595242758248" />
-    <state width="1398" height="207" key="GridCell.Tab.1.right" timestamp="1595243792069">
+    <state width="1398" height="207" key="GridCell.Tab.1.right" timestamp="1595243893902">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="207" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1595243792069" />
+    <state width="1398" height="207" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1595243893902" />
     <state width="1398" height="207" key="GridCell.Tab.1.right/0.23.1440.808@0.23.1440.808" timestamp="1592826229444" />
     <state width="1398" height="207" key="GridCell.Tab.1.right/0.23.1440.811@0.23.1440.811" timestamp="1595242758249" />
     <state x="388" y="172" key="GuiDesigner.FormSource.Dialog" timestamp="1592819975291">
