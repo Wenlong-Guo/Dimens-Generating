@@ -11,6 +11,8 @@ import org.dom4j.io.XMLWriter;
 import site.wenlong.dimens.core.Configuration;
 import site.wenlong.dimens.exception.CreateFileException;
 import site.wenlong.dimens.exception.FileExistsException;
+import site.wenlong.dimens.exception.InputEmptyException;
+import site.wenlong.dimens.exception.InputZeroException;
 import site.wenlong.dimens.languages.LanguagesFactory;
 import site.wenlong.dimens.languages.Text;
 import site.wenlong.dimens.tools.InputTools;
@@ -187,6 +189,12 @@ public class SettingDialog extends JFrame {
                 return;
             } catch (DocumentException e) {
                 Messages.showMessageDialog(mText.getTipsCreateFileError(), PLUGINS_NAME, Messages.getInformationIcon());
+                return;
+            } catch (InputZeroException e) {
+                Messages.showMessageDialog(mText.getTipsInputZero(), PLUGINS_NAME, Messages.getInformationIcon());
+                return;
+            } catch (InputEmptyException e) {
+                Messages.showMessageDialog(mText.getTipsInputEmpty(), PLUGINS_NAME, Messages.getInformationIcon());
                 return;
             }
             try {

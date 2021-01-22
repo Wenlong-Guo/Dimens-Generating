@@ -115,4 +115,14 @@ public class Chinese implements Text {
     public String getTipsDimensExists() {
         return "已经存在%s文件夹的dimens.xml文件\n请在Dimens Generating Tools的菜单中勾选可以覆盖源文件\n或者备份后删除重新生成";
     }
+
+    @Override
+    public String getTipsInputEmpty() {
+        return "不允许输入内容为空";
+    }
+
+    @Override
+    public String getTipsInputZero() {
+        return "不允许输入数字为0";
+    }
 }
