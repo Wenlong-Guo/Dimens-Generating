@@ -8,11 +8,9 @@ package site.wenlong.dimens.utils;
  */
 public class FolderNameUtils {
     public static String splicingFolderName(String qualifierName, float toDimension) {
-        StringBuilder sb = new StringBuilder();
-        return sb.append("values-")
-                .append(qualifierName)
-                .append((int) toDimension)
-                .append("dp")
-                .toString();
+        return "values-" +
+                qualifierName +
+                (int) toDimension +
+                "dp";
     }
 }

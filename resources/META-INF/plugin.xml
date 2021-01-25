@@ -77,15 +77,16 @@
     </extensions>
     <actions>
         <!-- Add your actions here -->
+        <group id="Dimens Generating" text="Dimens Generating" popup="true">
 
-        <action id="dimensGenerate" class="site.wenlong.dimens.core.DimensGenerate" text="Generate Dimens"
-                description="DimensGeneratingMenuAction">
             <add-to-group group-id="ProjectViewCompileGroup" anchor="first"/>
-        </action>
-        <action id="dimensConverter" class="site.wenlong.dimens.core.DimensConverter" text="Convert Dimens"
-                description="DimensConvertMenuAction">
-            <add-to-group group-id="ProjectViewCompileGroup" anchor="first"/>
-        </action>
+
+            <action id="dimensGenerate" class="site.wenlong.dimens.core.DimensGenerate" text="Generate Dimens"
+                    description="DimensGeneratingMenuAction"/>
+
+            <action id="dimensConverter" class="site.wenlong.dimens.core.DimensConverter" text="Convert Dimens"
+                    description="DimensConvertMenuAction"/>
+        </group>
     </actions>
 
 </idea-plugin>

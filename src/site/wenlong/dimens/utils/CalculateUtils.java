@@ -24,9 +24,7 @@ public class CalculateUtils {
         for (int l = 0; l < length; l++) {
             sb.append("#");
         }
-        DecimalFormat df = new DecimalFormat(sb.toString());
-        String decimal = df.format(originNumber);
-        NumberFormat nf = DecimalFormat.getNumberInstance(Locale.getDefault());
-        return nf.format(decimal);
+        String decimal = new DecimalFormat(sb.toString()).format(originNumber);
+        return NumberFormat.getNumberInstance(Locale.getDefault()).format(Double.valueOf(decimal));
     }
 }

@@ -1,14 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand />
     <select />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea667488-b463-48cc-bb21-edd129976e1c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dimens-Generating.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Dimens-Generating.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dimens-Generating.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Zip/Dimens-Generating.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/META-INF/plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/form/ConverterDialog.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/form/ConverterDialog.form" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/form/ConverterDialog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/form/ConverterDialog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/form/SettingDialog.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/form/SettingDialog.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/utils/CalculateUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/utils/CalculateUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/site/wenlong/dimens/utils/FolderNameUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/site/wenlong/dimens/utils/FolderNameUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +72,7 @@
     <property name="GenerateAntBuildDialog.generateSingleFile" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="Dimens Generating V1.1.0" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW" value="false" />
+    <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.STATE" value="right" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.SHOW" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="276" />
@@ -78,16 +87,17 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3858093" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/site/wenlong/dimens/old" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="I:\Idea_code\Dimens-Generating\ScreenShot" />
       <recent name="D:\idea_project_place\Dimens-Generating\src\site\wenlong\dimens" />
       <recent name="D:\idea_project_place\Dimens-Generating\lib" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Zip" />
+      <recent name="$PROJECT_DIR$/src/site/wenlong/dimens/old" />
     </key>
   </component>
   <component name="RunManager" selected="Plugin.Plugin">
@@ -237,15 +247,6 @@
     <option name="localTasksCounter" value="11" />
     <servers />
   </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-  </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
   </component>
@@ -319,49 +320,85 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="144" y="90" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1611313529828" />
-    <state width="1398" height="236" key="GridCell.Tab.0.bottom" timestamp="1611313601565">
+    <state width="1398" height="236" key="GridCell.Tab.0.bottom" timestamp="1611565512043">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="236" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1611313601565" />
-    <state width="1398" height="236" key="GridCell.Tab.0.center" timestamp="1611313601563">
+    <state width="1398" height="236" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1611565512043" />
+    <state width="1398" height="236" key="GridCell.Tab.0.bottom/0.25.1440.804@0.25.1440.804" timestamp="1611563777407" />
+    <state width="1398" height="236" key="GridCell.Tab.0.center" timestamp="1611565512042">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="236" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1611313601563" />
-    <state width="1398" height="236" key="GridCell.Tab.0.left" timestamp="1611313601563">
+    <state width="1398" height="236" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1611565512042" />
+    <state width="1398" height="236" key="GridCell.Tab.0.center/0.25.1440.804@0.25.1440.804" timestamp="1611563777405" />
+    <state width="1398" height="236" key="GridCell.Tab.0.left" timestamp="1611565512041">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="236" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1611313601563" />
-    <state width="1398" height="236" key="GridCell.Tab.0.right" timestamp="1611313601564">
+    <state width="1398" height="236" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1611565512041" />
+    <state width="1398" height="236" key="GridCell.Tab.0.left/0.25.1440.804@0.25.1440.804" timestamp="1611563777404" />
+    <state width="1398" height="236" key="GridCell.Tab.0.right" timestamp="1611565512042">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="236" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1611313601564" />
-    <state width="1398" height="236" key="GridCell.Tab.1.bottom" timestamp="1611313601567">
+    <state width="1398" height="236" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1611565512042" />
+    <state width="1398" height="236" key="GridCell.Tab.0.right/0.25.1440.804@0.25.1440.804" timestamp="1611563777406" />
+    <state width="1398" height="236" key="GridCell.Tab.1.bottom" timestamp="1611565512045">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="236" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1611313601567" />
-    <state width="1398" height="236" key="GridCell.Tab.1.center" timestamp="1611313601565">
+    <state width="1398" height="236" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1611565512045" />
+    <state width="1398" height="236" key="GridCell.Tab.1.bottom/0.25.1440.804@0.25.1440.804" timestamp="1611563777410" />
+    <state width="1398" height="236" key="GridCell.Tab.1.center" timestamp="1611565512044">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="236" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1611313601565" />
-    <state width="1398" height="236" key="GridCell.Tab.1.left" timestamp="1611313601565">
+    <state width="1398" height="236" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1611565512044" />
+    <state width="1398" height="236" key="GridCell.Tab.1.center/0.25.1440.804@0.25.1440.804" timestamp="1611563777408" />
+    <state width="1398" height="236" key="GridCell.Tab.1.left" timestamp="1611565512043">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="236" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1611313601565" />
-    <state width="1398" height="236" key="GridCell.Tab.1.right" timestamp="1611313601566">
+    <state width="1398" height="236" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1611565512043" />
+    <state width="1398" height="236" key="GridCell.Tab.1.left/0.25.1440.804@0.25.1440.804" timestamp="1611563777408" />
+    <state width="1398" height="236" key="GridCell.Tab.1.right" timestamp="1611565512044">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="236" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1611313601566" />
-    <state x="465" y="170" key="RollbackChangesDialog" timestamp="1611313530411">
+    <state width="1398" height="236" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1611565512044" />
+    <state width="1398" height="236" key="GridCell.Tab.1.right/0.25.1440.804@0.25.1440.804" timestamp="1611563777409" />
+    <state width="1398" height="292" key="GridCell.Tab.2.bottom" timestamp="1611562472914">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="465" y="170" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1611313530411" />
-    <state x="208" y="42" key="SettingsEditor" timestamp="1611313429497">
+    <state width="1398" height="292" key="GridCell.Tab.2.bottom/0.0.1440.900@0.0.1440.900" timestamp="1611562472914" />
+    <state width="1398" height="292" key="GridCell.Tab.2.center" timestamp="1611562472913">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="208" y="42" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1611313429497" />
-    <state x="421" y="219" width="597" height="490" key="find.popup" timestamp="1611313900666">
+    <state width="1398" height="292" key="GridCell.Tab.2.center/0.0.1440.900@0.0.1440.900" timestamp="1611562472913" />
+    <state width="1398" height="292" key="GridCell.Tab.2.left" timestamp="1611562472913">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="421" y="219" width="597" height="490" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1611313900666" />
+    <state width="1398" height="292" key="GridCell.Tab.2.left/0.0.1440.900@0.0.1440.900" timestamp="1611562472913" />
+    <state width="1398" height="292" key="GridCell.Tab.2.right" timestamp="1611562472914">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state width="1398" height="292" key="GridCell.Tab.2.right/0.0.1440.900@0.0.1440.900" timestamp="1611562472914" />
+    <state x="465" y="170" key="RollbackChangesDialog" timestamp="1611563175332">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="465" y="170" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1611563175332" />
+    <state x="208" y="42" key="SettingsEditor" timestamp="1611563024821">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="208" y="42" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1611563024821" />
+    <state x="479" y="165" key="VCS.ChangeListViewerDialog" timestamp="1611562567945">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="479" y="165" key="VCS.ChangeListViewerDialog/0.0.1440.900@0.0.1440.900" timestamp="1611562567945" />
+    <state x="492" y="348" key="com.intellij.uiDesigner.propertyInspector.editors.string.StringEditorDialog" timestamp="1611568396100">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="492" y="348" key="com.intellij.uiDesigner.propertyInspector.editors.string.StringEditorDialog/0.0.1440.900@0.0.1440.900" timestamp="1611568396100" />
+    <state x="421" y="219" width="597" height="490" key="find.popup" timestamp="1611315954691">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="421" y="219" width="597" height="490" key="find.popup/0.0.1440.900@0.0.1440.900" timestamp="1611315954691" />
+    <state x="385" y="217" width="670" height="676" key="search.everywhere.popup" timestamp="1611474248000">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="385" y="217" width="670" height="676" key="search.everywhere.popup/0.0.1440.900@0.0.1440.900" timestamp="1611474248000" />
   </component>
 </project>

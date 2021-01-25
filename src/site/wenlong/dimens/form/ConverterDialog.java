@@ -26,6 +26,10 @@ public class ConverterDialog extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
+    private JLabel titleLabel;
+    private JButton convertButton;
+    private JTextField lengthTextField;
+    private JTextField fontTextField;
     private Configuration configuration = Configuration.getInstance();
 
     public ConverterDialog(VirtualFile currentFile, Project project) {
@@ -61,12 +65,12 @@ public class ConverterDialog extends JDialog {
         }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
     }
 
-    public void convertOneLayoutXmlFile(VirtualFile currentFile){
+    public void convertOneLayoutXmlFile(VirtualFile currentFile) {
         convert(currentFile);
         Messages.showMessageDialog(LanguagesFactory.createText(configuration.languageIndex).getTipsGenerateSuccess(), PLUGINS_NAME, Messages.getInformationIcon());
     }
 
-    public void convertLayoutFolder(VirtualFile currentFile){
+    public void convertLayoutFolder(VirtualFile currentFile) {
         VirtualFile[] children = currentFile.getChildren();
         for (VirtualFile child : children) {
             convert(child);
@@ -81,7 +85,7 @@ public class ConverterDialog extends JDialog {
             root.add(coverDocument.getRootElement());
             cycleConvert(root);
             OutputFormat format = new OutputFormat();
-            XMLWriter xmlWriter = new XMLWriter(new FileWriter(new File(child.getCanonicalPath())),format);
+            XMLWriter xmlWriter = new XMLWriter(new FileWriter(new File(child.getCanonicalPath())), format);
             xmlWriter.write(coverDocument);
             xmlWriter.flush();
             xmlWriter.close();
@@ -93,9 +97,10 @@ public class ConverterDialog extends JDialog {
     private void cycleConvert(List<Element> elements) {
         if (elements == null || elements.size() == 0) return;
         for (Element element : elements) {
+            System.out.println("外层name\n" + element.getName());
             for (Attribute attribute : element.attributes()) {
                 String attributeValue = attribute.getValue();
-                System.out.println("name" + attribute.getName());
+                System.out.println("name:" + attribute.getName());
                 System.out.println("value:" + attribute.getValue());
                 if (attributeValue.endsWith("dp")) {
                     attribute.setText("@dimen/length_" + attributeValue.substring(0, attributeValue.length() - 2));
@@ -106,8 +111,8 @@ public class ConverterDialog extends JDialog {
                 } else if (attributeValue.endsWith("px")) {
                     attribute.setText("@dimen/length_" + attributeValue.substring(0, attributeValue.length() - 2));
                 }
-                cycleConvert(element.elements());
             }
+            cycleConvert(element.elements());
         }
     }
 
