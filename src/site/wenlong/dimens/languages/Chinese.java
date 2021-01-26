@@ -112,6 +112,11 @@ public class Chinese implements Text {
     }
 
     @Override
+    public String getTipsConvertSuccess() {
+        return "转换成功";
+    }
+
+    @Override
     public String getTipsDimensExists() {
         return "已经存在%s文件夹的dimens.xml文件\n请在Dimens Generating Tools的菜单中勾选可以覆盖源文件\n或者备份后删除重新生成";
     }
@@ -124,5 +129,40 @@ public class Chinese implements Text {
     @Override
     public String getTipsInputZero() {
         return "不允许输入数字为0";
+    }
+
+    @Override
+    public String getTipsConvertTitle() {
+        return "转换设置";
+    }
+
+    @Override
+    public String getTipsConvertTip1() {
+        return "小贴士:1.转换需要一点点时间\n      2.px不会转换";
+    }
+
+    @Override
+    public String getTipsConvertDP() {
+        return "dp转换的前缀";
+    }
+
+    @Override
+    public String getTipsConvertSP() {
+        return "sp转换的前缀";
+    }
+
+    @Override
+    public String getTipsConvertEP1() {
+        return "(例如:length_ ,生成后为length_1)";
+    }
+
+    @Override
+    public String getTipsConvertEP2() {
+        return "(例如:font_ ,生成后为font_1)";
+    }
+
+    @Override
+    public String getTipsConvertButton() {
+        return "转换";
     }
 }

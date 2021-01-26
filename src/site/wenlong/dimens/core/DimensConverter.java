@@ -25,16 +25,19 @@ public class DimensConverter extends AnAction {
     @Override
     public void actionPerformed(@NotNull AnActionEvent event) {
         VirtualFile currentFile = event.getData(PlatformDataKeys.VIRTUAL_FILE);
+        Project project = event.getData(PlatformDataKeys.PROJECT);
+        ConverterDialog converterDialog = null;
         if (LegalUtils.isLayoutFolder(currentFile)) {
-            Project project = event.getData(PlatformDataKeys.PROJECT);
-            ConverterDialog setting = new ConverterDialog(currentFile, project);
-            setting.convertLayoutFolder(currentFile);
+            converterDialog = new ConverterDialog(currentFile, project, true);
         } else if (LegalUtils.isLayoutXml(currentFile)) {
-            Project project = event.getData(PlatformDataKeys.PROJECT);
-            ConverterDialog setting = new ConverterDialog(currentFile, project);
-            setting.convertOneLayoutXmlFile(currentFile);
+            converterDialog = new ConverterDialog(currentFile, project, false);
         } else {
             Messages.showMessageDialog(LanguagesFactory.createText(mConfiguration.languageIndex).getLayoutTipsErrorFile(), PLUGINS_NAME, Messages.getInformationIcon());
+        }
+        if (converterDialog != null) {
+            converterDialog.setSize(640, 480);
+            converterDialog.setLocationRelativeTo(null);
+            converterDialog.setVisible(true);
         }
     }
 }

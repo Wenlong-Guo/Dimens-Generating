@@ -43,7 +43,7 @@ import static site.wenlong.dimens.core.Configuration.PLUGINS_NAME;
  * @date : 2019/4/30  23:30
  */
 public class SettingDialog extends JFrame {
-    private Configuration configuration = Configuration.getInstance();
+    private final Configuration configuration = Configuration.getInstance();
     private Text mText = LanguagesFactory.createText(configuration.languageIndex);
 
     private JPanel mRoot;
@@ -92,12 +92,12 @@ public class SettingDialog extends JFrame {
         etDecimal.getDocument().addDocumentListener(new DocumentListener() {
             @Override
             public void insertUpdate(DocumentEvent e) {
-                configuration.mBit = Integer.valueOf(etDecimal.getText());
+                configuration.mBit = Integer.parseInt(etDecimal.getText());
             }
 
             @Override
             public void removeUpdate(DocumentEvent e) {
-                configuration.mBit = Integer.valueOf(etDecimal.getText());
+                configuration.mBit = Integer.parseInt(etDecimal.getText());
             }
 
             @Override
@@ -107,12 +107,12 @@ public class SettingDialog extends JFrame {
         etMinWidth.getDocument().addDocumentListener(new DocumentListener() {
             @Override
             public void insertUpdate(DocumentEvent e) {
-                configuration.mOriginWidth = Float.valueOf(etMinWidth.getText());
+                configuration.mOriginWidth = Float.parseFloat(etMinWidth.getText());
             }
 
             @Override
             public void removeUpdate(DocumentEvent e) {
-                configuration.mOriginWidth = Float.valueOf(etMinWidth.getText());
+                configuration.mOriginWidth = Float.parseFloat(etMinWidth.getText());
             }
 
             @Override
@@ -168,13 +168,12 @@ public class SettingDialog extends JFrame {
 
     private void initData(VirtualFile currentFile, Project project) {
         btnGenerate.addActionListener(a -> {
-            int decimal = 0;
-            float minWidth = 0;
+            int decimal;
+            float minWidth;
             String folderName = InputTools.getString(etFolder.getText(), configuration.isReName, configuration.mRename);
             float target = 0.0f;
             ArrayList<Float> targets = new ArrayList<>();
             boolean isSingle = configuration.isSingle;
-            Document document;
             try {
                 decimal = InputTools.getInt(etDecimal.getText(), configuration.isKeepPoint, configuration.mBit);
                 minWidth = InputTools.getFloat(etMinWidth.getText(), configuration.isMinWidth, configuration.mOriginWidth);
@@ -183,7 +182,7 @@ public class SettingDialog extends JFrame {
                 } else {
                     targets = InputTools.getMultipleNumber(etMultiple.getText());
                 }
-                document = new SAXReader().read(new File(Objects.requireNonNull(currentFile.getCanonicalPath())));
+                new SAXReader().read(new File(Objects.requireNonNull(currentFile.getCanonicalPath())));
             } catch (NumberFormatException e) {
                 Messages.showMessageDialog(mText.getTipsErrorNumber(), PLUGINS_NAME, Messages.getInformationIcon());
                 return;
@@ -237,13 +236,12 @@ public class SettingDialog extends JFrame {
 
     private Document converDimension(Document document, int decimal, float targetDimens, float originDimens) {
         float scale = originDimens / targetDimens;
-        Document coverDocument = document;
-        Element rootElement = coverDocument.getRootElement();
+        Element rootElement = document.getRootElement();
         List<Element> elements = rootElement.elements();
         Element subElement;
         String subElementValueString;
-        for (int i = 0; i < elements.size(); i++) {
-            subElement = elements.get(i);
+        for (Element element : elements) {
+            subElement = element;
             subElementValueString = (String) subElement.getData();
             float subElementValue;
             if (subElementValueString.endsWith("dp")) {
@@ -257,7 +255,7 @@ public class SettingDialog extends JFrame {
                 subElement.setText(CalculateUtils.targetDimension(subElementValue, decimal, scale) + "dip");
             }
         }
-        return coverDocument;
+        return document;
     }
 
     private void createDimensFile(Document document, String parentFolderUrl, String customFolderName, boolean isCover) throws IOException, CreateFileException, FileExistsException {
@@ -270,7 +268,9 @@ public class SettingDialog extends JFrame {
         if (!isCover && dimensFile.exists()) {
             throw new FileExistsException(String.format(mText.getTipsDimensExists(), customFolderName));
         }
-        dimensFile.delete();
+        if (!dimensFile.delete()) {
+            System.out.println("删除文件失败失败:"+dimensFile.getName());
+        }
         FileOutputStream fileOutputStream = new FileOutputStream(dimensFile);
         XMLWriter xmlWriter = new XMLWriter(fileOutputStream);
         xmlWriter.write(document);

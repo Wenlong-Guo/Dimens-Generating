@@ -134,6 +134,11 @@ public class English implements Text {
     }
 
     @Override
+    public String getTipsConvertSuccess() {
+        return "Converted successfully";
+    }
+
+    @Override
     public String getTipsDimensExists() {
         return "The dimens.xml file of the %s folder already exists.\n Please check the Dimens Generating Tools menu to overwrite the source file \n or delete and regenerate after backup.";
     }
@@ -146,5 +151,40 @@ public class English implements Text {
     @Override
     public String getTipsInputZero() {
         return "Do not allow input numbers to be 0";
+    }
+
+    @Override
+    public String getTipsConvertTitle() {
+        return "Convert Option";
+    }
+
+    @Override
+    public String getTipsConvertTip1() {
+        return "Tips:need a little time\n      2.px will not convert";
+    }
+
+    @Override
+    public String getTipsConvertDP() {
+        return "dp conversion prefix";
+    }
+
+    @Override
+    public String getTipsConvertSP() {
+        return "sp conversion prefix";
+    }
+
+    @Override
+    public String getTipsConvertEP1() {
+        return "(For example: length_ ,generation is length_1)";
+    }
+
+    @Override
+    public String getTipsConvertEP2() {
+        return "(For example: font_ ,generation is font_1)";
+    }
+
+    @Override
+    public String getTipsConvertButton() {
+        return "Convert";
     }
 }
