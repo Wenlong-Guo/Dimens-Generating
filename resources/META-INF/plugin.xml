@@ -34,7 +34,6 @@
       </p>
       <p><b>Tips:</b>
       <ul>
-        <li>Stay in Chinese text and display English later.</li>
         <li>Welcome to improve your opinion.</li>
         <li>If you feel good,please star,thank you very much.</li>
       </ul>
@@ -42,7 +41,7 @@
       <p>
       <b>To Do List:</b>
       <ul>
-        <li>Better support in English.</li>
+        <li>Support Japanese and Korean.</li>
         <li>Optimize the UI.</li>
         <li>Perfect the documentation.</li>
       </ul>
@@ -68,6 +67,7 @@
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
          on how to target different products -->
     <depends>com.intellij.java</depends>
+    <depends>com.intellij.modules.all</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
