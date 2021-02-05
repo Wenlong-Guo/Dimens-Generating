@@ -24,6 +24,7 @@
         <li>When the file to be generated already exists, you can control whether to overwrite.</li>
         <li>Can generate multiple files of the specified size at the same time.</li>
         <li>Can generate one or multiple times at a time.</li>
+        <li>Transformation layout.xml or layout folder DP DIP SP in the resource file.</li>
       </ul>
       </p>
       <p><b>Usage:</b>
@@ -52,6 +53,7 @@
 
     <change-notes><![CDATA[
       <ul>
+        <li>V2.0.0 ⑴fix issue6 ⑵Add Logo  ⑶Transformation layout.xml or layout folder DP DIP SP in the resource file</li>
         <li>V1.2.0 ⑴Redraw the UI ⑵Add save configuration function  ⑶Support English and Chinese (4)Fix bug where resource attribute cannot be converted starting with "dip"</li>
         <li>V1.1.0 ⑴Custom decimal bit ⑵Generate multiple default parameter ⑶Custom qualifier name</li>
         <li>V1.0.1 Solve the problem that the specified size of the generated file is invalid </li>
@@ -65,9 +67,7 @@
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
          on how to target different products -->
-    <!-- uncomment to enable plugin in all products
-    <depends>com.intellij.modules.lang</depends>
-    -->
+    <depends>com.intellij.java</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
