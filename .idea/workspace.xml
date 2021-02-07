@@ -8,7 +8,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea667488-b463-48cc-bb21-edd129976e1c" name="Default Changelist" comment="" />
+    <list default="true" id="ea667488-b463-48cc-bb21-edd129976e1c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,15 +83,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Zip" />
-      <recent name="$PROJECT_DIR$/src/site/wenlong/dimens/old" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/META-INF" />
       <recent name="I:\Idea_code\Dimens-Generating\ScreenShot" />
       <recent name="D:\idea_project_place\Dimens-Generating\src\site\wenlong\dimens" />
       <recent name="D:\idea_project_place\Dimens-Generating\lib" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Zip" />
+      <recent name="$PROJECT_DIR$/src/site/wenlong/dimens/old" />
     </key>
   </component>
   <component name="RunManager" selected="Plugin.Plugin">
@@ -130,6 +132,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Utils" />
         <item itemvalue="Application.Utils" />
         <item itemvalue="Application.Utils" />
         <item itemvalue="Application.Utils" />
