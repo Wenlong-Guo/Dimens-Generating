@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.guowenlong.dimens</id>
     <name>Dimens Generating</name>
-    <version>1.2.0</version>
+    <version>2.0.0</version>
     <vendor email="guowenlong20000@sina.com" url="https://github.com/Wenlong-Guo/Dimens-Generating">Guo Wenlong</vendor>
 
     <description><![CDATA[
@@ -24,16 +24,18 @@
         <li>When the file to be generated already exists, you can control whether to overwrite.</li>
         <li>Can generate multiple files of the specified size at the same time.</li>
         <li>Can generate one or multiple times at a time.</li>
+        <li>Transformation layout.xml or layout folder DP DIP SP in the resource file.</li>
       </ul>
       </p>
       <p><b>Usage:</b>
       <ul>
-        <li>Choose origin dimens.xml -> right click -> Generate Dimens -> Edit option -> Click "生成" button</li>
+        <li>Choose origin dimens.xml -> right click -> Generate Dimens -> Edit option -> Click "Generate/生成" button
+        <img src="https://plugins.jetbrains.com/files/11290/screenshot_19610.png">
+        </li>
       </ul>
       </p>
       <p><b>Tips:</b>
       <ul>
-        <li>Stay in Chinese text and display English later.</li>
         <li>Welcome to improve your opinion.</li>
         <li>If you feel good,please star,thank you very much.</li>
       </ul>
@@ -41,7 +43,7 @@
       <p>
       <b>To Do List:</b>
       <ul>
-        <li>Better support in English.</li>
+        <li>Support Japanese and Korean.</li>
         <li>Optimize the UI.</li>
         <li>Perfect the documentation.</li>
       </ul>
@@ -52,6 +54,7 @@
 
     <change-notes><![CDATA[
       <ul>
+        <li>V2.0.0 ⑴fix issue6 ⑵Add Logo  ⑶Transformation layout.xml or layout folder DP DIP SP in the resource file</li>
         <li>V1.2.0 ⑴Redraw the UI ⑵Add save configuration function  ⑶Support English and Chinese (4)Fix bug where resource attribute cannot be converted starting with "dip"</li>
         <li>V1.1.0 ⑴Custom decimal bit ⑵Generate multiple default parameter ⑶Custom qualifier name</li>
         <li>V1.0.1 Solve the problem that the specified size of the generated file is invalid </li>
@@ -65,25 +68,27 @@
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
          on how to target different products -->
-    <!-- uncomment to enable plugin in all products
-    <depends>com.intellij.modules.lang</depends>
-    -->
+    <depends>com.intellij.java</depends>
+    <depends>com.intellij.modules.all</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
         <applicationService
                 serviceImplementation="site.wenlong.dimens.core.Configuration"
-                serviceInterface="site.wenlong.dimens.core.Configuration"
         />
     </extensions>
-
     <actions>
         <!-- Add your actions here -->
+        <group id="Dimens Generating" text="Dimens Generating" popup="true">
 
-        <action id="dimensGenerate" class="site.wenlong.dimens.core.DimensGenerate" text="Generate Dimens"
-                description="DimensGeneratingMenuAction">
             <add-to-group group-id="ProjectViewCompileGroup" anchor="first"/>
-        </action>
+
+            <action id="dimensGenerate" class="site.wenlong.dimens.core.DimensGenerate" text="Generate Dimens"
+                    description="DimensGeneratingMenuAction"/>
+
+            <action id="dimensConverter" class="site.wenlong.dimens.core.DimensConverter" text="Convert Dimens"
+                    description="DimensConvertMenuAction"/>
+        </group>
     </actions>
 
 </idea-plugin>

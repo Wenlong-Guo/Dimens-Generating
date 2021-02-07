@@ -36,6 +36,8 @@ public interface Text {
 
     String getTipsErrorFile();
 
+    String getLayoutTipsErrorFile();
+
     String getTipsErrorNumber();
 
     String getTipsCreateFileFailed();
@@ -44,5 +46,25 @@ public interface Text {
 
     String getTipsGenerateSuccess();
 
+    String getTipsConvertSuccess();
+
     String getTipsDimensExists();
+
+    String getTipsInputEmpty();
+
+    String getTipsInputZero();
+
+    String getTipsConvertTitle();
+
+    String getTipsConvertTip1();
+
+    String getTipsConvertDP();
+
+    String getTipsConvertSP();
+
+    String getTipsConvertEP1();
+
+    String getTipsConvertEP2();
+
+    String getTipsConvertButton();
 }

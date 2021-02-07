@@ -16,6 +16,8 @@ import org.jetbrains.annotations.Nullable;
 @State(name = "Configuration", storages = {@com.intellij.openapi.components.Storage(value = "$APP_CONFIG$/Configuration.xml")})
 public class Configuration implements PersistentStateComponent<Configuration> {
     public final static String DEFAULT_FILE_NAME = "dimens.xml";
+    public final static String DEFAULT_LAYOUT_FOLDER_NAME = "layout";
+    public final static String DEFAULT_LAYOUT_XML_NAME = ".xml";
     public final static String PLUGINS_NAME = "Dimens Generating Tools";
     public boolean isCover;
     public boolean isKeepPoint;
@@ -28,6 +30,8 @@ public class Configuration implements PersistentStateComponent<Configuration> {
     public String mSingle = "400";
     public String mMulitple = "300,320,340,360,380,400,420,440,460,480,500";
     public int languageIndex = 0;
+    public String mDP = "length_";
+    public String mSP = "font_";
     @Nullable
     @Override
     public Configuration getState() {

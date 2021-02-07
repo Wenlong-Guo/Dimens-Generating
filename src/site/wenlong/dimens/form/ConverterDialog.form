@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="site.wenlong.dimens.form.ConverterDialog">
+  <grid id="cbd77" binding="mRoot" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="10" left="10" bottom="10" right="10"/>
+    <constraints>
+      <xy x="48" y="54" width="457" height="394"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="94766" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="70b0b" class="javax.swing.JButton" binding="convertButton" default-binding="true">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="0" indent="0" use-parent-layout="false">
+                <minimum-size width="200" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <text value="Convert"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="e3588" layout-manager="GridLayoutManager" row-count="7" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="12" bottom="0" right="12"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="faed1" class="javax.swing.JLabel" binding="titleLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="2"/>
+              <horizontalTextPosition value="0"/>
+              <maximumSize width="100" height="25"/>
+              <minimumSize width="100" height="25"/>
+              <preferredSize width="120" height="25"/>
+              <text value="Convert Option"/>
+            </properties>
+          </component>
+          <grid id="b357a" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="5c1ae" class="javax.swing.JTextField" binding="etFont" default-binding="true">
+                <constraints/>
+                <properties>
+                  <minimumSize width="100" height="30"/>
+                  <preferredSize width="100" height="30"/>
+                  <text value="font_"/>
+                </properties>
+              </component>
+              <component id="a4607" class="javax.swing.JLabel" binding="epLabel2">
+                <constraints/>
+                <properties>
+                  <text value="(For example: font_ ,generation is font_1)"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="98814" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="d25de" class="javax.swing.JLabel" binding="spLabel">
+                <constraints/>
+                <properties>
+                  <text value="sp conversion prefix"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="95903" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="719bc" class="javax.swing.JTextField" binding="etLength" default-binding="true">
+                <constraints/>
+                <properties>
+                  <alignmentX value="0.5"/>
+                  <autoscrolls value="true"/>
+                  <minimumSize width="100" height="30"/>
+                  <preferredSize width="100" height="30"/>
+                  <text value="length_"/>
+                </properties>
+              </component>
+              <component id="93f74" class="javax.swing.JLabel" binding="epLabel1">
+                <constraints/>
+                <properties>
+                  <text value="(For example: length_ ,generation is length_1)"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="eb6dc" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="8" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="31106" class="javax.swing.JLabel" binding="dpLabel">
+                <constraints/>
+                <properties>
+                  <text value="dp conversion prefix"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="8cc1a" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <component id="85fce" class="javax.swing.JLabel" binding="tipsLabel">
+                <constraints/>
+                <properties>
+                  <text value="Tips:need a little time"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="5768f" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children/>
+          </grid>
+          <component id="439a3" class="javax.swing.JComboBox" binding="comboBox">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="2" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <model>
+                <item value="English"/>
+                <item value="中文"/>
+              </model>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

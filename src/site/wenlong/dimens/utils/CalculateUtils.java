@@ -1,6 +1,8 @@
 package site.wenlong.dimens.utils;
 
 import java.text.DecimalFormat;
+import java.text.NumberFormat;
+import java.util.Locale;
 
 /**
  * 计算工具类
@@ -22,7 +24,7 @@ public class CalculateUtils {
         for (int l = 0; l < length; l++) {
             sb.append("#");
         }
-        DecimalFormat df = new DecimalFormat(sb.toString());
-        return df.format(originNumber);
+        String decimal = new DecimalFormat(sb.toString()).format(originNumber);
+        return NumberFormat.getNumberInstance(Locale.getDefault()).format(Double.valueOf(decimal));
     }
 }

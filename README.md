@@ -11,9 +11,11 @@ Dimens-Generating
 * When the file to be generated already exists, you can control whether to overwrite.
 * Can generate multiple files of the specified size at the same time.
 * Can generate one or multiple times at a time.
+* Transformation layout.xml or layout folder DP DIP SP in the resource file.
 
 ## Usage
-* Choose origin dimens.xml -> right click -> Generate Dimens -> Edit option -> Click "生成" button
+* Choose origin dimens.xml -> right click -> Dimens Generating -> Generate Dimens -> Edit option -> Click "Generate/生成" button
+* Choose origin dimens.xml -> right click -> Dimens Generating -> Convert Dimens -> Edit option -> Click "Convert/转换" button
 
 ## Tips
 * Stay in Chinese text and display English later.
@@ -21,11 +23,16 @@ Dimens-Generating
 * If you feel good,please star,thank you very much.
 
 ## To Do List
-* Better support in English
+* Support Japanese and Korean
 * Optimize the UI
 * Perfect the documentation
 
 ## Change Notes
+* V2.0.0 
+1. fix issue6 
+2. Add Logo  
+3. Transformation layout.xml or layout folder DP DIP SP in the resource file</li>
+
 * V1.2.0 
 1. Redraw the UI 
 2. Add save configuration function  
