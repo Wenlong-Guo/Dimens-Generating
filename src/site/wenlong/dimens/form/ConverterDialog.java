@@ -151,7 +151,7 @@ public class ConverterDialog extends JDialog {
                 convert(currentFile);
             }
         });
-        Messages.showMessageDialog(LanguagesFactory.createText(configuration.languageIndex).getTipsGenerateSuccess(), PLUGINS_NAME, Messages.getInformationIcon());
+        Messages.showMessageDialog(LanguagesFactory.createText(configuration.languageIndex).getTipsConvertSuccess(), PLUGINS_NAME, Messages.getInformationIcon());
     }
 
     public void convertLayoutFolder(VirtualFile currentFile, Project project) {
@@ -164,7 +164,7 @@ public class ConverterDialog extends JDialog {
                 }
             }
         });
-        Messages.showMessageDialog(LanguagesFactory.createText(configuration.languageIndex).getTipsGenerateSuccess(), PLUGINS_NAME, Messages.getInformationIcon());
+        Messages.showMessageDialog(LanguagesFactory.createText(configuration.languageIndex).getTipsConvertSuccess(), PLUGINS_NAME, Messages.getInformationIcon());
     }
 
     private void convert(VirtualFile child) {

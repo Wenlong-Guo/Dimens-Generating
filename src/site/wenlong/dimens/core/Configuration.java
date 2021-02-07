@@ -30,8 +30,8 @@ public class Configuration implements PersistentStateComponent<Configuration> {
     public String mSingle = "400";
     public String mMulitple = "300,320,340,360,380,400,420,440,460,480,500";
     public int languageIndex = 0;
-    public String mDP = "length";
-    public String mSP = "font";
+    public String mDP = "length_";
+    public String mSP = "font_";
     @Nullable
     @Override
     public Configuration getState() {

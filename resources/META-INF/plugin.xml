@@ -29,7 +29,9 @@
       </p>
       <p><b>Usage:</b>
       <ul>
-        <li>Choose origin dimens.xml -> right click -> Generate Dimens -> Edit option -> Click "生成" button</li>
+        <li>Choose origin dimens.xml -> right click -> Generate Dimens -> Edit option -> Click "Generate/生成" button
+        <img src="https://plugins.jetbrains.com/files/11290/screenshot_19610.png">
+        </li>
       </ul>
       </p>
       <p><b>Tips:</b>
