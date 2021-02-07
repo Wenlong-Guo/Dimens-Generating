@@ -50,7 +50,7 @@ Solve the problem that the specified size of the generated file is invalid
 First Version
 
 ## ScreenShot
-![ScreenShot](https://github.com/Wenlong-Guo/Dimens-Generating/blob/master/ScreenShot/ScreenShot.gif)
+![ScreenShot](https://plugins.jetbrains.com/files/11290/screenshot_19610.png)
 
 [license-img]: https://img.shields.io/badge/License-MIT-green.svg
 [license]: https://github.com/Wenlong-Guo/Dimens-Generating/blob/master/LICENSE
