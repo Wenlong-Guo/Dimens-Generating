@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.guowenlong.dimens</id>
     <name>Dimens Generating</name>
-    <version>2.0.0</version>
+    <version>2.0.1</version>
     <vendor email="guowenlong20000@sina.com" url="https://github.com/Wenlong-Guo/Dimens-Generating">Guo Wenlong</vendor>
 
     <description><![CDATA[
@@ -54,6 +54,7 @@
 
     <change-notes><![CDATA[
       <ul>
+        <li>V2.0.1 ⑴fix plugin compatibility issues</li>
         <li>V2.0.0 ⑴fix issue6 ⑵Add Logo  ⑶Transformation layout.xml or layout folder DP DIP SP in the resource file</li>
         <li>V1.2.0 ⑴Redraw the UI ⑵Add save configuration function  ⑶Support English and Chinese (4)Fix bug where resource attribute cannot be converted starting with "dip"</li>
         <li>V1.1.0 ⑴Custom decimal bit ⑵Generate multiple default parameter ⑶Custom qualifier name</li>
@@ -69,7 +70,6 @@
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
          on how to target different products -->
     <depends>com.intellij.java</depends>
-    <depends>com.intellij.modules.all</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
