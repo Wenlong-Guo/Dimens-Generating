@@ -28,6 +28,9 @@ Dimens-Generating
 * Perfect the documentation
 
 ## Change Notes
+* V2.0.2
+1. fix some V2.0.0 Bugs
+
 * V2.0.0 
 1. fix issue6 
 2. Add Logo  
