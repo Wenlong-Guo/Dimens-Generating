@@ -8,7 +8,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea667488-b463-48cc-bb21-edd129976e1c" name="Default Changelist" comment="" />
+    <list default="true" id="ea667488-b463-48cc-bb21-edd129976e1c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zip/Dimens-Generating_2.0.2.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/META-INF/plugin.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -81,15 +85,15 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Zip" />
+      <recent name="$PROJECT_DIR$/src/site/wenlong/dimens/old" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/META-INF" />
       <recent name="I:\Idea_code\Dimens-Generating\ScreenShot" />
       <recent name="D:\idea_project_place\Dimens-Generating\src\site\wenlong\dimens" />
       <recent name="D:\idea_project_place\Dimens-Generating\lib" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Zip" />
-      <recent name="$PROJECT_DIR$/src/site/wenlong/dimens/old" />
     </key>
   </component>
   <component name="RunManager" selected="Plugin.Plugin">
@@ -312,10 +316,11 @@
     <option name="LAST_COMMIT_MESSAGE" value="develop : 完成 V1.1.0 版本的功能和文档1.自定义dimens 保留小数点.2.默认生成多套参数优化.3. 自定义限定符名称." />
   </component>
   <component name="WindowStateProjectService">
-    <state x="100" y="100" width="1240" height="700" key="DiffContextDialog" timestamp="1630311574981">
-      <screen x="0" y="25" width="1440" height="807" />
+    <state x="100" y="100" width="1240" height="700" key="DiffContextDialog" timestamp="1630576050665">
+      <screen x="0" y="25" width="1440" height="875" />
     </state>
-    <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1630295686471" />
+    <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.0.1440.900@0.0.1440.900" timestamp="1630575718178" />
     <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.25.1440.807@0.25.1440.807" timestamp="1630311574981" />
+    <state x="100" y="100" width="1240" height="700" key="DiffContextDialog/0.25.1440.875@0.25.1440.875" timestamp="1630576050665" />
   </component>
 </project>
