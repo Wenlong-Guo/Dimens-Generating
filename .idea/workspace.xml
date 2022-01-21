@@ -8,10 +8,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea667488-b463-48cc-bb21-edd129976e1c" name="Default Changelist" comment="Default Changelist">
-      <change afterPath="$PROJECT_DIR$/Zip/Dimens-Generating_2.0.4.zip" afterDir="false" />
+    <list default="true" id="ea667488-b463-48cc-bb21-edd129976e1c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Zip/Dimens-Generating_2.0.3.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Zip/Dimens-Generating_2.0.3.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zip/Dimens-Generating_2.0.4.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Zip/Dimens-Generating_2.0.4.zip" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,7 +36,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/2.0.1" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -48,9 +47,6 @@
     <option name="FILTER_INFO" value="true" />
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="1dfZailFSk2WCo1sdE0qFx2Ha29" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -69,8 +65,6 @@
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.generateSingleFile" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="Dimens Generating V1.1.0" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.STATE" value="right" />
@@ -79,11 +73,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557134477096" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/META-INF" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -93,18 +83,18 @@
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/Zip" />
-      <recent name="$PROJECT_DIR$/src/site/wenlong/dimens/old" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/META-INF" />
       <recent name="I:\Idea_code\Dimens-Generating\ScreenShot" />
       <recent name="D:\idea_project_place\Dimens-Generating\src\site\wenlong\dimens" />
       <recent name="D:\idea_project_place\Dimens-Generating\lib" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Zip" />
+      <recent name="$PROJECT_DIR$/src/site/wenlong/dimens/old" />
+    </key>
   </component>
-  <component name="RunManager" selected="插件.Plugin">
+  <component name="RunManager" selected="应用程序.Utils">
     <configuration name="Utils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="site.wenlong.dimens.Utils" />
       <module name="Dimens-Generating" />
@@ -172,12 +162,6 @@
       <workItem from="1595217548269" duration="9252000" />
       <workItem from="1595242465120" duration="1425000" />
       <workItem from="1595322676769" duration="896000" />
-      <workItem from="1642747545462" duration="153000" />
-      <workItem from="1642747730034" duration="92000" />
-      <workItem from="1642747843161" duration="155000" />
-      <workItem from="1642748072600" duration="1757000" />
-      <workItem from="1642749866491" duration="354000" />
-      <workItem from="1642750595267" duration="358000" />
     </task>
     <task id="LOCAL-00001" summary="develop : 插件的基础功能已具备">
       <created>1540706000369</created>
@@ -253,7 +237,7 @@
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="2" />
   </component>
   <component name="Vcs.Log.History.Properties">
     <option name="COLUMN_ORDER">
