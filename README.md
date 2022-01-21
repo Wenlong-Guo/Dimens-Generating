@@ -28,6 +28,9 @@ Dimens-Generating
 * Perfect the documentation
 
 ## Change Notes
+* V2.0.4
+1. fix #18
+
 * V2.0.3
 1. fix some V2.0.0 Bugs
 
@@ -57,6 +60,6 @@ First Version
 
 [license-img]: https://img.shields.io/badge/License-MIT-green.svg
 [license]: https://github.com/Wenlong-Guo/Dimens-Generating/blob/master/LICENSE
-[version-img]:https://img.shields.io/badge/Jetbrains%20Plugins-V2.0.3-blue.svg
+[version-img]:https://img.shields.io/badge/Jetbrains%20Plugins-V2.0.4-blue.svg
 [plugin]: https://plugins.jetbrains.com/plugin/11290
 
