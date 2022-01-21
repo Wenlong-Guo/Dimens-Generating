@@ -25,6 +25,8 @@ public class CalculateUtils {
             sb.append("#");
         }
         String decimal = new DecimalFormat(sb.toString()).format(originNumber);
-        return NumberFormat.getNumberInstance(Locale.getDefault()).format(Double.valueOf(decimal));
+        NumberFormat numberFormat = NumberFormat.getNumberInstance(Locale.getDefault());
+        numberFormat.setGroupingUsed(false);
+        return numberFormat.format(Double.valueOf(decimal));
     }
 }
