@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.guowenlong.dimens</id>
     <name>Dimens Generating</name>
-    <version>2.0.4</version>
+    <version>2.0.5</version>
     <vendor email="guowenlong20000@sina.com" url="https://github.com/Wenlong-Guo/Dimens-Generating">Guo Wenlong</vendor>
 
     <description><![CDATA[
@@ -54,6 +54,7 @@
 
     <change-notes><![CDATA[
       <ul>
+        <li>V2.0.5 ⑴fix android studio compatibility</li>
         <li>V2.0.4 ⑴fix #18</li>
         <li>V2.0.3 ⑴fix some V2.0.0 Bugs</li>
         <li>V2.0.0 ⑴fix issue6 ⑵Add Logo  ⑶Transformation layout.xml or layout folder DP DIP SP in the resource file</li>
@@ -72,7 +73,7 @@
          on how to target different products -->
     <depends>com.intellij.modules.lang</depends>
     <depends>com.intellij.modules.all</depends>
-    <depends>com.intellij.modules.androidstudio</depends>
+    <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
         <!-- Add your extensions here -->
@@ -83,11 +84,13 @@
         <!-- Add your actions here -->
         <action id="dimensGenerate" class="site.wenlong.dimens.core.DimensGenerate" text="Generate Dimens"
                 description="DimensGeneratingMenuAction">
-            <add-to-group group-id="ProjectViewCompileGroup" anchor="first"/>
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="alt G"/>
         </action>
         <action id="dimensConverter" class="site.wenlong.dimens.core.DimensConverter" text="Convert Dimens"
                 description="DimensConvertMenuAction">
-            <add-to-group group-id="ProjectViewCompileGroup" anchor="first"/>
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="alt O"/>
         </action>
     </actions>
 </idea-plugin>

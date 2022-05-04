@@ -8,9 +8,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ea667488-b463-48cc-bb21-edd129976e1c" name="Default Changelist" comment="">
+    <list default="true" id="ea667488-b463-48cc-bb21-edd129976e1c" name="Default Changelist" comment="develop : 完成 V1.1.0 版本的功能和文档1.自定义dimens 保留小数点.2.默认生成多套参数优化.3. 自定义限定符名称.">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Zip/Dimens-Generating_2.0.4.zip" beforeDir="false" afterPath="$PROJECT_DIR$/Zip/Dimens-Generating_2.0.4.zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dimens-Generating.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Dimens-Generating.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zip/Dimens-Generating_2.0.3.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Zip/Dimens-Generating_2.0.4.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/resources/META-INF/plugin.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +53,9 @@
     <option name="FILTER_DEBUG" value="true" />
     <option name="CUSTOM_FILTER" />
   </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
   <component name="ProjectId" id="1dfZailFSk2WCo1sdE0qFx2Ha29" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectReloadState">
@@ -65,6 +73,8 @@
     <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
     <property name="GenerateAntBuildDialog.generateSingleFile" value="true" />
     <property name="GenerateAntBuildDialog.outputFileNameProperty" value="Dimens Generating V1.1.0" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.SHOW" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.PaletteManager.STATE" value="right" />
@@ -77,7 +87,7 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.3858093" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -94,7 +104,7 @@
       <recent name="$PROJECT_DIR$/src/site/wenlong/dimens/old" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.Utils">
+  <component name="RunManager" selected="Plugin.Plugin">
     <configuration name="Utils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="site.wenlong.dimens.Utils" />
       <module name="Dimens-Generating" />
@@ -127,8 +137,8 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="应用程序.Utils" />
-      <item itemvalue="插件.Plugin" />
+      <item itemvalue="Application.Utils" />
+      <item itemvalue="Plugin.Plugin" />
     </list>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
