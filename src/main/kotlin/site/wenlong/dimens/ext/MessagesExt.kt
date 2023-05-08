@@ -1,5 +1,6 @@
 package site.wenlong.dimens.ext
 
+import com.intellij.openapi.application.ApplicationManager
 import com.intellij.openapi.ui.Messages
 import site.wenlong.dimens.constant.Constant
 
@@ -12,17 +13,22 @@ import site.wenlong.dimens.constant.Constant
  */
 
 fun showErrorMessage(message: String) {
-    Messages.showMessageDialog(
-        message,
-        Constant.PLUGINS_NAME,
-        Messages.getErrorIcon()
-    )
+    ApplicationManager.getApplication().invokeLater {
+
+        Messages.showMessageDialog(
+            message,
+            Constant.PLUGINS_NAME,
+            Messages.getErrorIcon()
+        )
+    }
 }
 
 fun showMessage(message: String) {
-    Messages.showMessageDialog(
-        message,
-        Constant.PLUGINS_NAME,
-        Messages.getInformationIcon()
-    )
+    ApplicationManager.getApplication().invokeLater {
+        Messages.showMessageDialog(
+            message,
+            Constant.PLUGINS_NAME,
+            Messages.getInformationIcon()
+        )
+    }
 }

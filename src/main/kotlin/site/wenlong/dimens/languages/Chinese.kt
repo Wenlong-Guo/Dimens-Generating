@@ -46,6 +46,8 @@ object Chinese : Text {
 
     override val tipsConvertSuccess: String = "转换成功"
 
+    override val tipsConvertFail: String = "转换失败"
+
     override val tipsDimensExists: String =
         "已经存在%s文件夹的dimens.xml文件\n请在Dimens Generating Tools的菜单中勾选可以覆盖源文件\n或者备份后删除重新生成"
 
@@ -65,7 +67,11 @@ object Chinese : Text {
 
     override val tipsConvertEP2: String = "(例如:font_ ,生成后为font_1)"
 
-    override val tipsConvertButton: String = "(例如:font_ ,生成后为font_1)"
+    override val tipsConvertButton: String = "转换"
 
+    override val language: String = "语言"
 
+    override val converting: String = "转换中"
+
+    override val exceptionOfFileError: String = "文件内部错误"
 }

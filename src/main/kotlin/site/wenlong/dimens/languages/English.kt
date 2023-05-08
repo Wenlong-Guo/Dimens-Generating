@@ -49,6 +49,8 @@ object English : Text {
 
     override val tipsConvertSuccess: String = "Converted successfully"
 
+    override val tipsConvertFail: String = "Converter fail"
+
     override val tipsDimensExists: String =
         "The dimens.xml file of the %s folder already exists.\n Please check the Dimens Generating Tools menu to overwrite the source file \n or delete and regenerate after backup."
 
@@ -58,7 +60,7 @@ object English : Text {
 
     override val tipsConvertTitle: String = "Convert Option"
 
-    override val tipsConvertTip1: String = "Tips:need a little time\n      2.px will not convert"
+    override val tipsConvertTip1: String = "Tips:need a little time and px will not be convert"
 
     override val tipsConvertDP: String = "dp conversion prefix"
 
@@ -70,4 +72,9 @@ object English : Text {
 
     override val tipsConvertButton: String = "Convert"
 
+    override val language: String = "Language"
+
+    override val converting: String = "Converting..."
+
+    override val exceptionOfFileError: String = "File Error"
 }

@@ -28,6 +28,7 @@ interface Text {
     val tipsCreateFileError: String
     val tipsGenerateSuccess: String
     val tipsConvertSuccess: String
+    val tipsConvertFail: String
     val tipsDimensExists: String
     val tipsInputEmpty: String
     val tipsInputZero: String
@@ -38,4 +39,7 @@ interface Text {
     val tipsConvertEP1: String
     val tipsConvertEP2: String
     val tipsConvertButton: String
+    val language :String
+    val converting :String
+    val exceptionOfFileError :String
 }

@@ -22,11 +22,11 @@ class DimensConverter : BaseAnAction() {
         val project = event.getData(PlatformDataKeys.PROJECT) ?: throw Exception("plugins compatibility error")
         when {
             isLayoutFolder(currentFile) -> {
-                DimensConverterDialog(currentFile, project, true).showDialog()
+                DimensConverterDialog(currentFile, project, true).showFrame()
             }
 
             isLayoutXml(currentFile) -> {
-                DimensConverterDialog(currentFile, project, false).showDialog()
+                DimensConverterDialog(currentFile, project, false).showFrame()
             }
 
             else -> {
