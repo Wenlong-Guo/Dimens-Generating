@@ -1,30 +1,96 @@
-<!-- Plugin Configuration File. Read more: https://plugins.jetbrains.com/docs/intellij/plugin-configuration-file.html -->
 <idea-plugin>
-    <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
-    <id>site.wenlong.dimens.Dimens-Generating-Kotlin</id>
+    <id>com.guowenlong.dimens</id>
+    <name>Dimens Generating</name>
+    <version>2.0.5</version>
+    <vendor email="guowenlong20000@sina.com" url="https://github.com/Wenlong-Guo/Dimens-Generating">Guo Wenlong</vendor>
 
-    <!-- Public plugin name should be written in Title Case.
-         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
-    <name>Dimens-Generating-Kotlin</name>
-
-    <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
-    <vendor email="support@yourcompany.com" url="https://www.yourcompany.com">YourCompany</vendor>
-
-    <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
-         Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
-         Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
     <description><![CDATA[
-    Enter short description for your plugin here.<br>
-    <em>most HTML tags may be used</em>
-  ]]></description>
+    <h1>Dimens Tool</h1>
+      <br/>
+      <p>
+      <b>
+      <a href="https://github.com/Wenlong-Guo/Dimens-Generating">GitHub</a> |
+      <a href="https://github.com/Wenlong-Guo/Dimens-Generating/issues">Issues</a> |
+      <a href="https://plugins.jetbrains.com/plugin/11290-dimens-generating">Jetbrains</a> |
+      <a href="https://github.com/Wenlong-Guo/Dimens-Generating/blob/master/README.md">README</a>
+      </b>
+      </p>
+      <br/>
+      <p><b>A Generate any smallest width screen size dimens.xml plugin.</b></p>
+      <br/>
+      <p><b>Features:</b>
+      <ul>
+        <li>Generate a dimens.xml file of the specified size (can be customized) based on the selected dimens.xml file.</li>
+        <li>When the file to be generated already exists, you can control whether to overwrite.</li>
+        <li>Can generate multiple files of the specified size at the same time.</li>
+        <li>Can generate one or multiple times at a time.</li>
+        <li>Transformation layout.xml or layout folder DP DIP SP in the resource file.</li>
+      </ul>
+      </p>
+      <p><b>Usage:</b>
+      <ul>
+        <li>Choose origin dimens.xml -> right click -> Generate Dimens -> Edit option -> Click "Generate/生成" button
+        <img src="https://plugins.jetbrains.com/files/11290/screenshot_19610.png">
+        </li>
+      </ul>
+      </p>
+      <p><b>Tips:</b>
+      <ul>
+        <li>Welcome to improve your opinion.</li>
+        <li>If you feel good,please star,thank you very much.</li>
+      </ul>
+      </p>
+      <p>
+      <b>To Do List:</b>
+      <ul>
+        <li>Support Japanese and Korean.</li>
+        <li>Optimize the UI.</li>
+        <li>Perfect the documentation.</li>
+      </ul>
+      </p>
+      <br/>
+      <p><a href="https://github.com/Wenlong-Guo/Dimens-Generating/issues">Send feedback</a></p>
+    ]]></description>
 
-    <!-- Product and plugin compatibility requirements.
-         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html -->
+    <change-notes><![CDATA[
+      <ul>
+        <li>V2.0.5 ⑴fix android studio compatibility</li>
+        <li>V2.0.4 ⑴fix #18</li>
+        <li>V2.0.3 ⑴fix some V2.0.0 Bugs</li>
+        <li>V2.0.0 ⑴fix issue6 ⑵Add Logo  ⑶Transformation layout.xml or layout folder DP DIP SP in the resource file</li>
+        <li>V1.2.0 ⑴Redraw the UI ⑵Add save configuration function  ⑶Support English and Chinese (4)Fix bug where resource attribute cannot be converted starting with "dip"</li>
+        <li>V1.1.0 ⑴Custom decimal bit ⑵Generate multiple default parameter ⑶Custom qualifier name</li>
+        <li>V1.0.1 Solve the problem that the specified size of the generated file is invalid </li>
+        <li>V1.0.0 First Version</li>
+      </ul>
+    ]]>
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="201.8743"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.lang</depends>
+    <depends>com.intellij.modules.all</depends>
     <depends>com.intellij.modules.platform</depends>
 
-    <!-- Extension points defined by the plugin.
-         Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
-
+        <!-- Add your extensions here -->
+        <applicationService serviceImplementation="site.wenlong.dimens.storages.Configuration"/>
     </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="dimensGenerate" class="site.wenlong.dimens.action.generate.DimensGenerate" text="Generate Dimens"
+                description="DimensGeneratingMenuAction">
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="alt G"/>
+        </action>
+        <action id="dimensConverter" class="site.wenlong.dimens.action.converter.DimensConverter" text="Convert Dimens"
+                description="DimensConvertMenuAction">
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="alt O"/>
+        </action>
+    </actions>
 </idea-plugin>

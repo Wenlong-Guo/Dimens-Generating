@@ -5,7 +5,7 @@ plugins {
 }
 
 group = "site.wenlong.dimens"
-version = "1.0-SNAPSHOT"
+version = "3.0.0"
 
 repositories {
     mavenCentral()
@@ -18,6 +18,9 @@ intellij {
     type.set("IC") // Target IDE Platform
 
     plugins.set(listOf(/* Plugin Dependencies */))
+}
+
+dependencies {
 }
 
 tasks {
