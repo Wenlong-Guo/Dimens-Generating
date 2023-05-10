@@ -8,16 +8,15 @@ package site.wenlong.dimens.languages
  * @date   : 2023/5/6  23:14
  */
 object English : Text {
-    override val titleOne = "Setting Options"
+    override val titleOne = "Generate Options"
 
-    override val cover = "Overwrite existing files"
+    override val cover = "Override existing files"
 
     override val decimal = "Keep the decimal point"
 
     override val minWidth = "Set the minimum width of the selected dimens.xml(Default 360dp)"
 
-    override val folder =
-        "Set the qualifier name (default sw) (Note: no matter how you name it will not change the rules for file generation)"
+    override val folder = "Set qualifier name (default is \"sw\") (note: naming does not affect file generation rules)"
 
     override val bit = "bit"
 
@@ -27,11 +26,11 @@ object English : Text {
 
     override val single = "Single"
 
-    override val multiple = "Multiple"
+    override val multi = "Multiple"
 
     override val advancedOption = "advanced option"
 
-    override val genarate = "Genarate dimens"
+    override val genarate = "Generate dimens"
 
     override val tipsErrorFile = "The file you selected is not dimens.xml, please re-select"
 
@@ -46,6 +45,8 @@ object English : Text {
         "Generate xml file or folder exception, please submit a question to github, thanks";
 
     override val tipsGenerateSuccess: String = "Generated successfully"
+
+    override val tipsGenerateFail: String = "Generated fail"
 
     override val tipsConvertSuccess: String = "Converted successfully"
 

@@ -18,7 +18,7 @@ interface Text {
     val more: String
     val titleTwo: String
     val single: String
-    val multiple: String
+    val multi: String
     val advancedOption: String
     val genarate: String
     val tipsErrorFile: String
@@ -27,6 +27,7 @@ interface Text {
     val tipsCreateFileFailed: String
     val tipsCreateFileError: String
     val tipsGenerateSuccess: String
+    val tipsGenerateFail: String
     val tipsConvertSuccess: String
     val tipsConvertFail: String
     val tipsDimensExists: String

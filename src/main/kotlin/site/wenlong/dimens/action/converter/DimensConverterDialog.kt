@@ -179,7 +179,7 @@ class DimensConverterDialog(
         spPanel.add(convertSpTips)
         root.add(spPanel)
 
-        val buttonJPanel = JPanel(FlowLayout(FlowLayout.CENTER, 0, 0))
+        val buttonJPanel = JPanel(FlowLayout(FlowLayout.CENTER, 0, 20))
         buttonJPanel.add(converter)
         buttonJPanel.preferredSize = Dimension(600, preferredSize.height)
 

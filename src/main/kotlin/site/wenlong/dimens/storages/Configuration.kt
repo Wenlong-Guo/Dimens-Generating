@@ -24,7 +24,7 @@ class Configuration : PersistentStateComponent<Configuration> {
     /**
      * 是否覆盖
      */
-    var isOverwrite = false
+    var isOverride = false
 
     /**
      * 是否保留小数点
@@ -49,7 +49,7 @@ class Configuration : PersistentStateComponent<Configuration> {
     /**
      * 小数点位数
      */
-    var decimalPlaces = 2
+    var decimalPlace = 2
 
     /**
      * 原始宽度
@@ -59,7 +59,7 @@ class Configuration : PersistentStateComponent<Configuration> {
     /**
      * 文件夹中间名字
      */
-    var rename = "sw"
+    var folderName = "sw"
 
     /**
      * 单个生成的dimens文件的宽度基准

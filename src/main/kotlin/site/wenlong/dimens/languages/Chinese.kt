@@ -26,7 +26,7 @@ object Chinese : Text {
 
     override val single: String = "单个生成"
 
-    override val multiple: String = "多个生成"
+    override val multi: String = "多个生成"
 
     override val genarate: String = "生成Dimens"
 
@@ -50,6 +50,8 @@ object Chinese : Text {
 
     override val tipsDimensExists: String =
         "已经存在%s文件夹的dimens.xml文件\n请在Dimens Generating Tools的菜单中勾选可以覆盖源文件\n或者备份后删除重新生成"
+
+    override val tipsGenerateFail: String = "生成失败"
 
     override val tipsInputEmpty: String = "不允许输入内容为空"
 

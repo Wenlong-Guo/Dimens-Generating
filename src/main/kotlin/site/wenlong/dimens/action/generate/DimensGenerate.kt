@@ -23,7 +23,7 @@ class DimensGenerate : BaseAnAction() {
         val project = event.getData(PlatformDataKeys.PROJECT) ?: throw Exception("plugins compatibility error")
         when {
             isDimensFile(currentFile) -> {
-                DimensGenerateDialog(currentFile, project).showDialog()
+                DimensGenerateDialog(currentFile, project).showFrame()
             }
 
             else -> {
