@@ -21,15 +21,18 @@
 - [Tips](#Tips)
 - [Change Notes](#Change-Notes)
     - [V3.0.0](#V300)
-    - [V3.0.0](#V300)
-    - [V3.0.0](#V300)
-    - [V3.0.0](#V300)
-    - [V3.0.0](#V300)
+    - [V2.0.5](#V205)
+    - [V2.0.4](#V204)
+    - [V2.0.3](#V203)
+    - [V2.0.0](#V200)
+    - [V1.2.0](#V120)
+    - [V1.1.0](#V110)
+    - [V1.0.1](#V101)
+    - [V1.0.0](#V100)
 - [ScreenShot](#ScreenShot)
 - [License](#License)
 - [About My Github](#About-My-Github)
 - [About Me](#About-Me)
-
 
 ## Features
 
