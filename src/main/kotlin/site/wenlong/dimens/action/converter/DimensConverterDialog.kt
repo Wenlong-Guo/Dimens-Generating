@@ -5,6 +5,7 @@ import com.intellij.openapi.progress.ProgressManager
 import com.intellij.openapi.progress.Task
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.vfs.VirtualFile
+import com.intellij.openapi.vfs.VirtualFileManager
 import net.miginfocom.swing.MigLayout
 import org.w3c.dom.Element
 import org.w3c.dom.Node
@@ -22,17 +23,11 @@ import java.awt.FlowLayout
 import java.awt.Panel
 import java.awt.event.ItemEvent
 import java.io.File
-import java.io.FileWriter
-import java.io.StringWriter
 import java.util.*
-import java.util.regex.Matcher
-import java.util.regex.Pattern
 import javax.swing.*
 import javax.swing.event.DocumentEvent
 import javax.swing.event.DocumentListener
 import javax.xml.parsers.DocumentBuilderFactory
-import javax.xml.transform.OutputKeys
-import javax.xml.transform.Transformer
 import javax.xml.transform.TransformerFactory
 import javax.xml.transform.dom.DOMSource
 import javax.xml.transform.stream.StreamResult
@@ -270,6 +265,7 @@ class DimensConverterDialog(
                 override fun run(progressIndicator: ProgressIndicator) {
                     try {
                         convert(currentFile)
+                        VirtualFileManager.getInstance().syncRefresh()
                         showMessage(createText(configuration.languageIndex).tipsConvertSuccess)
                     } catch (e: Exception) {
                         showErrorMessage(createText(configuration.languageIndex).tipsConvertFail)

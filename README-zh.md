@@ -7,7 +7,7 @@
 [![Version][version-img]][plugin]
 [![Downloads][badge:downloads]][plugin-homepage]
 
-:ballot_box_with_check: A plugin that supports multiple screens by generating dimens.xml for any width screen size using minimum width qualifier.
+:ballot_box_with_check: 安卓最小宽度限定符插件.(生成多套dimens文件以及转换没有使用dimens的layout文件或者文件夹)
 
 [![Getting Started][badge:get-started-en]][get-started-en]
 [![开始使用][badge:get-started-zh]][get-started-zh]
@@ -16,74 +16,72 @@
 
 [//]: # ([![시작하기][badge:get-started-ko]][get-started-ko])
 
-- [Features](#Features)
-- [Usage](#Usage)
-- [Tips](#Tips)
-- [Change Notes](#Change-Notes)
-    - [V3.0.0](#V300)
-    - [V3.0.0](#V300)
-    - [V3.0.0](#V300)
-    - [V3.0.0](#V300)
-    - [V3.0.0](#V300)
+- [功能](#功能)
+- [用法](#用法)
+- [小贴士](#小贴士)
+- [变更说明](#变更说明)
+  - [V3.0.0](#V300)
+  - [V3.0.0](#V300)
+  - [V3.0.0](#V300)
+  - [V3.0.0](#V300)
+  - [V3.0.0](#V300)
 - [ScreenShot](#ScreenShot)
 - [License](#License)
 - [About My Github](#About-My-Github)
 - [About Me](#About-Me)
 
+## 功能
 
-## Features
+* 根据所选的dimens.xml文件生成指定尺寸（可自定义）的dimens.xml文件。
+* 当要生成的文件已经存在时，可以控制是否覆盖。
+* 可以同时生成多个指定大小的文件。
+* 在资源文件中，将layout.xml文件或layout文件夹中的DP、DIP或SP进行转换。
 
-* Generate a dimens.xml file of the specified size (can be customized) based on the selected dimens.xml file.
-* When the file to be generated already exists, you can control whether to override.
-* Can generate multiple files of the specified size at the same time.
-* Transformation layout.xml or layout folder DP DIP SP in the resource file.
+## 用法
 
-## Usage
+* 选择dimens.xml -> 右键 -> Generate Dimens -> 编辑选项 -> 点击 "Generate/生成" 按钮。
+* 选择layout.xml或者layout文件夹 -> 右键 -> Converter Dimens -> 编辑选项 -> 点击 "Converter/转换" 按钮。
 
-* Choose origin dimens.xml -> right click -> Generate Dimens -> Edit options -> Click "Generate/生成" button.
-* Choose layout.xml or layout folder -> right click -> Converter Dimens -> Edit options -> Click "Converter/转换" button.
+## 小贴士
 
-## Tips
+* 欢迎提出您的意见和建议。
+* 如果您感觉该产品不错，请为我们点赞，非常感谢。
 
-* Welcome to improve your opinion.
-* If you feel good,please star,thank you very much.
-
-## Change Notes
+## 变更说明
 
 ### V3.0.0
-1. refactor : Building a project using `Kotlin` through `Gradle`.
+1. 重构：使用 `Kotlin` 和 `Gradle` 构建项目。
 
 ### V2.0.5
-1. fix android studio compatibility
+1. 修复：与 Android Studio 兼容性问题
 
 ### V2.0.4
-1. fix : issue #18
+1. 修复 修复 issue #18
 
 ### V2.0.3
-1. fix : some V2.0.0 Bugs
+1. 修复：修复了一些 V2.0.0 中的错误。
 
 ### V2.0.0
-1. fix : issue #6
-2. feature : Add `Logo`
-3. feature : Transformation `layout.xml` or `layout folder` `DP` `DIP` `SP` in the resource file</li>
+1. 修复：修复 issue #6
+2. 功能：添加 `Logo`
+3. 功能：在资源文件中，将`layout.xml`或`layout folder`中的`DP` `DIP` `SP`进行转换。
 
 ### V1.2.0
-1. Redraw the UI
-2. Add save configuration function
-3. Support `English` and `Chinese`
-4. Fix bug where resource attribute cannot be converted starting with "dip"</li>
+1. 重新设计了用户界面
+2. 添加了保存配置函数
+3. 支持`英语`和`中文`
+4. 修复了资源属性以“dip”开头时无法转换的错误。
 
 ### V1.1.0
-1. feature : Custom decimal bit
-2. feature : Generate multiple default parameter
-3. feature : Custom qualifier name
+1. 功能：自定义小数点位数
+2. 功能：生成多个默认参数
+3. 功能：自定义限定符名称
 
 ### V1.0.1
-1. fix : Solve the problem that the specified size of the generated file is invalid
+1. 修正：解决了生成文件的指定大小无效的问题。
 
 ### V1.0.0
-1. First Version generate `dimens.xml`
-
+1. 初始版本：生成 `dimens.xml`。
 
 ## ScreenShot
 
@@ -91,11 +89,11 @@
 
 ## To Do List
 
-* Support Japanese and Korean languages
-* Batch generate dp and sp with specified naming conventions in dimens.xml
-* Add folder naming convention for generating dimens.xml
-* Enhance conversion function and provide conversion utilities for px, dp, dip, and sp referenced in the code
-* View current phone screen information via adb.
+* 支持日语和韩语
+* 在dimens.xml批量生成指定命名规则的dp和sp
+* 增加生成dimens.xml的文件夹命名规则
+* 增强转换功能 附赠代码中引用的px dp dip sp的转换工具类
+* 通过adb查看当前手机的屏幕信息
 
 License
 -------

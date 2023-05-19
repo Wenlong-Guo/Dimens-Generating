@@ -2,10 +2,10 @@ package site.wenlong.dimens.action.generate
 
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.vfs.VirtualFile
+import com.intellij.openapi.vfs.VirtualFileManager
 import net.miginfocom.swing.MigLayout
 import org.w3c.dom.Document
 import org.w3c.dom.Element
-import org.w3c.dom.Node
 import org.w3c.dom.NodeList
 import site.wenlong.dimens.constant.Constant
 import site.wenlong.dimens.ext.showErrorMessage
@@ -29,7 +29,6 @@ import javax.xml.parsers.DocumentBuilderFactory
 import javax.xml.transform.TransformerFactory
 import javax.xml.transform.dom.DOMSource
 import javax.xml.transform.stream.StreamResult
-import kotlin.jvm.Throws
 
 
 /**
@@ -400,6 +399,7 @@ class DimensGenerateDialog(private val currentFile: VirtualFile, private val pro
                         )
                     }
                 }
+                VirtualFileManager.getInstance().syncRefresh()
                 showMessage(LanguagesFactory.createText(configuration.languageIndex).tipsGenerateSuccess)
             } catch (e: Exception) {
                 showErrorMessage(e.message ?: LanguagesFactory.createText(configuration.languageIndex).tipsGenerateFail)
