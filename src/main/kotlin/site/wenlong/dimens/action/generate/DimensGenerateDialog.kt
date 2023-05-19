@@ -2,6 +2,7 @@ package site.wenlong.dimens.action.generate
 
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.vfs.VirtualFile
+import com.intellij.openapi.vfs.VirtualFileManager
 import net.miginfocom.swing.MigLayout
 import org.w3c.dom.Document
 import org.w3c.dom.Element
@@ -400,6 +401,7 @@ class DimensGenerateDialog(private val currentFile: VirtualFile, private val pro
                         )
                     }
                 }
+                VirtualFileManager.getInstance().syncRefresh()
                 showMessage(LanguagesFactory.createText(configuration.languageIndex).tipsGenerateSuccess)
             } catch (e: Exception) {
                 showErrorMessage(e.message ?: LanguagesFactory.createText(configuration.languageIndex).tipsGenerateFail)

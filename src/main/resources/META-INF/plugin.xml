@@ -16,22 +16,21 @@
       </b>
       </p>
       <br/>
-      <p><b>A Generate any smallest width screen size dimens.xml plugin.</b></p>
+      <p><b>A plugin that supports multiple screens by generating dimens.xml for any width screen size using minimum width qualifier.</b></p>
       <br/>
       <p><b>Features:</b>
       <ul>
         <li>Generate a dimens.xml file of the specified size (can be customized) based on the selected dimens.xml file.</li>
-        <li>When the file to be generated already exists, you can control whether to overwrite.</li>
+        <li>When the file to be generated already exists, you can control whether to override.</li>
         <li>Can generate multiple files of the specified size at the same time.</li>
-        <li>Can generate one or multiple times at a time.</li>
         <li>Transformation layout.xml or layout folder DP DIP SP in the resource file.</li>
       </ul>
       </p>
       <p><b>Usage:</b>
       <ul>
-        <li>Choose origin dimens.xml -> right click -> Generate Dimens -> Edit option -> Click "Generate/生成" button
+        <li>Choose origin dimens.xml -> right click -> Generate Dimens -> Edit options -> Click "Generate/生成" button.</li>
+        <li>Choose layout.xml or layout folder -> right click -> Converter Dimens -> Edit options -> Click "Converter/转换" button.</li>
         <img src="https://plugins.jetbrains.com/files/11290/screenshot_19610.png">
-        </li>
       </ul>
       </p>
       <p><b>Tips:</b>
@@ -43,9 +42,11 @@
       <p>
       <b>To Do List:</b>
       <ul>
-        <li>Support Japanese and Korean.</li>
-        <li>Optimize the UI.</li>
-        <li>Perfect the documentation.</li>
+        <li>Support Japanese and Korean languages.</li>
+        <li>Batch generate dp and sp with specified naming conventions in dimens.xml.</li>
+        <li>Add folder naming convention for generating dimens.xml.</li>
+        <li>Enhance conversion function and provide conversion utilities for px, dp, dip, and sp referenced in the code.</li>
+        <li>View current phone screen information via adb.</li>
       </ul>
       </p>
       <br/>

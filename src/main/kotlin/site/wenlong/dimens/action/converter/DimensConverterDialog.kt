@@ -22,17 +22,11 @@ import java.awt.FlowLayout
 import java.awt.Panel
 import java.awt.event.ItemEvent
 import java.io.File
-import java.io.FileWriter
-import java.io.StringWriter
 import java.util.*
-import java.util.regex.Matcher
-import java.util.regex.Pattern
 import javax.swing.*
 import javax.swing.event.DocumentEvent
 import javax.swing.event.DocumentListener
 import javax.xml.parsers.DocumentBuilderFactory
-import javax.xml.transform.OutputKeys
-import javax.xml.transform.Transformer
 import javax.xml.transform.TransformerFactory
 import javax.xml.transform.dom.DOMSource
 import javax.xml.transform.stream.StreamResult
