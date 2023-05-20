@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.guowenlong.dimens</id>
     <name>Dimens Generating</name>
-    <version>2.0.5</version>
+    <version>3.1.0</version>
     <vendor email="guowenlong20000@sina.com" url="https://github.com/Wenlong-Guo/Dimens-Generating">Guo Wenlong</vendor>
 
     <description><![CDATA[
@@ -30,7 +30,7 @@
       <ul>
         <li>Choose origin dimens.xml -> right click -> Generate Dimens -> Edit options -> Click "Generate/生成" button.</li>
         <li>Choose layout.xml or layout folder -> right click -> Converter Dimens -> Edit options -> Click "Converter/转换" button.</li>
-        <img src="https://plugins.jetbrains.com/files/11290/screenshot_19610.png">
+        <img src="https://plugins.jetbrains.com/files/11290/screenshot_19610.png" width="200">
       </ul>
       </p>
       <p><b>Tips:</b>
@@ -55,10 +55,12 @@
 
     <change-notes><![CDATA[
       <ul>
+        <li>V3.1.0 ⑴add update notes feature</li>
+        <li>V3.0.0 ⑴refactor project using `Kotlin` and `Gradle`</li>
         <li>V2.0.5 ⑴fix android studio compatibility</li>
-        <li>V2.0.4 ⑴fix #18</li>
+        <li>V2.0.4 ⑴fix issue #18</li>
         <li>V2.0.3 ⑴fix some V2.0.0 Bugs</li>
-        <li>V2.0.0 ⑴fix issue6 ⑵Add Logo  ⑶Transformation layout.xml or layout folder DP DIP SP in the resource file</li>
+        <li>V2.0.0 ⑴fix issue #6 ⑵Add Logo  ⑶Transformation layout.xml or layout folder DP DIP SP in the resource file</li>
         <li>V1.2.0 ⑴Redraw the UI ⑵Add save configuration function  ⑶Support English and Chinese (4)Fix bug where resource attribute cannot be converted starting with "dip"</li>
         <li>V1.1.0 ⑴Custom decimal bit ⑵Generate multiple default parameter ⑶Custom qualifier name</li>
         <li>V1.0.1 Solve the problem that the specified size of the generated file is invalid </li>
@@ -68,7 +70,7 @@
     </change-notes>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
-    <idea-version since-build="201.8743"/>
+    <idea-version since-build="212.4746.92"/>
 
     <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
          on how to target different products -->
@@ -77,8 +79,9 @@
     <depends>com.intellij.modules.platform</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <!-- Add your extensions here -->
         <applicationService serviceImplementation="site.wenlong.dimens.storages.Configuration"/>
+        <postStartupActivity implementation="site.wenlong.dimens.update.Update"/>
+        <notificationGroup id="UpdateNotificationGroup" displayType="STICKY_BALLOON" isLogByDefault="false"/>
     </extensions>
 
     <actions>

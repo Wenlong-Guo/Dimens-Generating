@@ -5,4 +5,4 @@ pluginManagement {
     }
 }
 
-rootProject.name = "Dimens-Generating-Kotlin"
+rootProject.name = "Dimens-Generating"
