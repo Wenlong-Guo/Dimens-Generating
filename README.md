@@ -55,7 +55,7 @@
 ## Change Notes
 
 ### V3.1.0
-1. feature : Add `Update notes`.
+1. feature : Add `Update notes` feature.
 
 ### V3.0.0
 1. refactor : Building a project using `Kotlin` through `Gradle`.

@@ -30,7 +30,7 @@
       <ul>
         <li>Choose origin dimens.xml -> right click -> Generate Dimens -> Edit options -> Click "Generate/生成" button.</li>
         <li>Choose layout.xml or layout folder -> right click -> Converter Dimens -> Edit options -> Click "Converter/转换" button.</li>
-        <img src="https://plugins.jetbrains.com/files/11290/screenshot_19610.png">
+        <img src="https://plugins.jetbrains.com/files/11290/screenshot_19610.png" width="200">
       </ul>
       </p>
       <p><b>Tips:</b>
@@ -55,7 +55,7 @@
 
     <change-notes><![CDATA[
       <ul>
-        <li>V3.1.0 ⑴add `Update notes`</li>
+        <li>V3.1.0 ⑴add update notes feature</li>
         <li>V3.0.0 ⑴refactor project using `Kotlin` and `Gradle`</li>
         <li>V2.0.5 ⑴fix android studio compatibility</li>
         <li>V2.0.4 ⑴fix issue #18</li>
@@ -80,7 +80,7 @@
 
     <extensions defaultExtensionNs="com.intellij">
         <applicationService serviceImplementation="site.wenlong.dimens.storages.Configuration"/>
-        <postStartupActivity implementation="site.wenlong.dimens.action.update.Update"/>
+        <postStartupActivity implementation="site.wenlong.dimens.update.Update"/>
         <notificationGroup id="UpdateNotificationGroup" displayType="STICKY_BALLOON" isLogByDefault="false"/>
     </extensions>
 

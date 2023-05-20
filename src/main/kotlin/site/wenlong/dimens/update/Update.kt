@@ -1,11 +1,10 @@
-package site.wenlong.dimens.action.update
+package site.wenlong.dimens.update
 
 import com.intellij.ide.util.PropertiesComponent
 import com.intellij.openapi.project.Project
 import com.intellij.openapi.startup.StartupActivity
 import site.wenlong.dimens.ext.INITIAL_VERSION
 import site.wenlong.dimens.ext.VERSION_PROPERTY
-import site.wenlong.dimens.ext.showMessage
 import site.wenlong.dimens.ext.version
 
 /**

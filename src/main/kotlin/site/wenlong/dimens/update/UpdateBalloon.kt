@@ -1,9 +1,8 @@
-package site.wenlong.dimens.action.update
+package site.wenlong.dimens.update
 
 import com.intellij.ide.util.PropertiesComponent
 import com.intellij.openapi.ui.popup.Balloon
 import com.intellij.openapi.ui.popup.JBPopupFactory
-import com.intellij.ui.JBColor
 import com.intellij.ui.awt.RelativePoint
 import com.intellij.util.ui.JBUI
 import site.wenlong.dimens.ext.VERSION_PROPERTY
