@@ -20,6 +20,7 @@
 - [Usage](#Usage)
 - [Tips](#Tips)
 - [Change Notes](#Change-Notes)
+    - [V3.1.0](#V310)
     - [V3.0.0](#V300)
     - [V2.0.5](#V205)
     - [V2.0.4](#V204)
@@ -52,6 +53,9 @@
 * If you feel good,please star,thank you very much.
 
 ## Change Notes
+
+### V3.1.0
+1. feature : Add `Update notes`.
 
 ### V3.0.0
 1. refactor : Building a project using `Kotlin` through `Gradle`.
