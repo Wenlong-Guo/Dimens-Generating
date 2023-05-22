@@ -155,7 +155,7 @@ License
 
 [license-img]: https://img.shields.io/badge/License-MIT-blue.svg
 [license]: https://github.com/Wenlong-Guo/Dimens-Generating/blob/master/LICENSE
-[version-img]: https://img.shields.io/badge/Jetbrains%20Plugins-V2.0.5-blue.svg
+[version-img]: https://img.shields.io/badge/Jetbrains%20Plugins-V3.1.0-blue.svg
 [plugin]: https://plugins.jetbrains.com/plugin/11290
 
 [badge:plugin-homepage]: https://img.shields.io/badge/plugin--homepage-Dimens--Generating-blue
